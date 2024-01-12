@@ -277,7 +277,7 @@ ezziee/media/
 
 .pytest_cache/
 ezziee/static/webpack_bundles/
-webpack-stats.json
+!webpack-stats.json
 .env
 .envs/*
 !.envs/.local/

@@ -1,0 +1,27 @@
+<template x-if="user !== null">
+<form x-init="initUpdate(user)" x-cloak x-show="modalForm === 'UpdateProfile'"
+  :class="{'overflow-hidden h-0': modalForm !== 'UpdateProfile', 'overflow-y-auto max-h-[calc(100vh_-_4rem)] h-fit lg:h-fit bottom-0 lg:bottom-auto': modalForm === 'UpdateProfile'}"
+  class="bg-light w-full rounded-t-xl lg:rounded-xl lg:w-100 lg:max-w-xl p-6 lg:mx-auto max-h-[calc(100vh_-_4rem)] lg:h-fit overflow-auto bottom-0 lg:top-16 fixed lg:bottom-auto lg:absolute flex flex-col duration-300 ease-linear">
+  <div class="flex items-center gap-2 mb-6">
+    <button type="button" @click="modalForm = 'Profile'" class="w-7 h-7 flex flex-col items-center justify-center">
+      <span class="iconify" data-icon="ic:outline-arrow-back-ios"></span>
+    </button>
+    <h4 class="font-semibold text-xl lg:text-2xl">Update <span class="first-letter:uppercase" x-text="user.username"></span> Account</h4>
+  </div>
+  <div class="mb-6">
+    <label for="name" class="block mb-2 text-sm font-medium ">Your Name</label>
+    <input x-model="profileForm.name" type="text" id="name" class="bg-light border border-primary text-primary placeholder-primary text-sm rounded-lg focus:ring-gsecondary focus:border-secondary block w-full p-2.5" :placeholder="user.name">
+  </div>
+  <div class="mb-6">
+    <label for="phone" class="block mb-2 text-sm font-medium ">Your Phone</label>
+    <input x-model="profileForm.phone" type="text" id="phone" class="bg-light border border-primary text-primary placeholder-primary text-sm rounded-lg focus:ring-gsecondary focus:border-secondary block w-full p-2.5" :placeholder="user.phone">
+  </div>
+
+  <div class="py-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <button class="order-2 lg:order-1 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-danger text-light" type="reset">Reset</button>
+    <button class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light" @click="updateProfile()" type="button">Submit</button>
+  </div>
+
+</form>
+
+</template>

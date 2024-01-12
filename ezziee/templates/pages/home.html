@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section
+  class="w-screen h-full lg:h-[55%] relative bg-white flex flex-col items-center justify-center overflow-hidden gap-6">
+  <video class="lg:order-1 order-2 object-cover object-right-bottom lg:object-contain h-64 lg:h-[55%]"
+    src="{% static 'videos/hero.mp4' %}" :key="hero" autoplay="true"></video>
+
+  <div
+    class="py-14 lg:py-0 px-8 lg:px-0 lg:order-2 order-1 lg:absolute relative lg:top-64 z-10 mx-auto lg:left-44 max-w-md gap-5">
+    <h2 class="text-primary font-bold font-mus text-2xl lg:text-4xl mb-2">
+      <span class="text-inherit lg:block">Easy Rewards,</span>
+      <span class="text-primary lg:block">Easy Earnings</span>
+    </h2>
+
+    <p class="text-base font-medium mb-4">Redeem your loyalty rewards and earn more while completing timed tasks.</p>
+
+    <template x-if="user === null">
+      <button @click="openModal('Register')"
+        class="bg-primary text-light py-3 px-6 rounded-xl hover:shaodw-md w-full text-center">Stay Connected</button>
+    </template>
+    <template x-if="user !== null">
+      <button @click="openModal('Profile')"
+        class="bg-primary text-light py-3 px-6 rounded-xl hover:shaodw-md w-full text-center">Stay Connected</button>
+    </template>
+  </div>
+</section>
+
+<section class="w-screen padding-x py-14 flex flex-col gap-8">
+
+  <h4 class="title flex">Active Tasks</h4>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <template x-if="allTasks !== null">
+      <template x-for="task in allTasks">
+        <div class="relative w-full bg-white rounded-xl p-4 hover:shadow-md hover:scale-105 duration-150 space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="block title">Expires</span>
+              <div class="flex items-center space-x-2 text-xs">
+                <span class="block text-primary"
+                  x-text="new Date(task.expiry).toLocaleDateString('en-US', { month: 'short' })"></span>
+                <span class="block text-primary" x-text="new Date(task.expiry).getDate()"></span>
+              </div>
+            </div>
+
+            <div>
+              <span class="title">Users</span>
+              <div class="flex items-center space-x-2 text-xs">
+                <span class="text-primary block" x-text="task.subscribers.length"></span>
+                <span>of</span>
+                <span class="text-primary block" x-text="task.max_users"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-secondary w-full rounded-md p-2.5">
+            <h4 class="font-semibold text-base" x-text="task.title"></h4>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <span class="title text-xs">Description</span>
+            <p class="text-sm text-gray-300" x-text="task.description"></p>
+          </div>
+
+          <div class="flex flex-col space-y-2 border-t-2 border-t-gray-300 pt-4">
+            <strong class="title">Actions</strong>
+            <div class="flex items-center gap-3 w-full overflow-x-auto relative">
+              <template x-for="action in task.actions">
+                <button
+                  class="w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2"><span
+                    class="flex" x-text="action.platform"></span> <span class="flex"
+                    x-text="action.action"></span></button>
+              </template>
+
+              <template x-if="user === null">
+                <div class="py-2 w-full h-14 bg-dark/60 absolute left-0 top-0 right-0 flex flex-col justify-center">
+                  <button @click="modalForm = 'Login'"
+                    class="bg-primary text-sm text-light py-2 px-6 mx-auto">Login</button>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </template>
+    </template>
+
+    <template x-if="allTasks === null">
+      <div class="md:col-span-2 xl:col-span-3 bg-danger/30 text-danger py-2 px-4 rounded-md">
+        <p>You need to be authenticated to view the active tasks!</p>
+      </div>
+    </template>
+  </div>
+</section>
+{% endblock content %}

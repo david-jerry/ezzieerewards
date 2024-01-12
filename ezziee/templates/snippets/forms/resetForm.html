@@ -1,0 +1,27 @@
+<form x-cloak x-show="modalForm === 'Reset'"
+  :class="{'overflow-hidden h-0': modalForm !== 'Reset', 'overflow-y-auto max-h-[calc(100vh_-_4rem)] h-fit lg:h-fit bottom-0 lg:bottom-auto': modalForm === 'Reset'}"
+  class="bg-light w-full rounded-t-xl lg:rounded-xl lg:w-100 lg:max-w-xl p-6 lg:mx-auto max-h-[calc(100vh_-_4rem)] lg:h-fit overflow-auto bottom-0 lg:top-16 fixed lg:bottom-auto lg:absolute flex flex-col duration-300 ease-linear">
+  <h4 class="mb-2 font-semibold text-xl lg:text-2xl">Reset Password</h4>
+  <p class="text-base mb-6">
+    Seems to be you forgot your password. Not to worry, just provide the email you registered with and we shall send an email notification to you.
+  </p>
+
+  <a class="cursor-pointer mb-6 text-sm" @click="modalForm = 'Login'">Remembers your credentials? <span
+      class="text-primary font-semibold">Login</span></a>
+
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-medium ">Your Email</label>
+    <input x-model="resetForm.email" type="email" id="email"
+      class="bg-light border border-primary text-primary placeholder-primary text-sm rounded-lg focus:ring-gsecondary focus:border-secondary block w-full p-2.5"
+      placeholder="email">
+  </div>
+
+  <div class="py-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <button
+      class="order-2 lg:order-1 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-danger text-light"
+      type="reset">Reset</button>
+    <button
+      class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light"
+      @click="resetPassword()" type="button">Submit</button>
+  </div>
+</form>

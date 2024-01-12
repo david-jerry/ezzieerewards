@@ -1,0 +1,72 @@
+{
+  "name": "ezziee",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@glidejs/glide": "*",
+    "@tailwindcss/aspect-ratio": "*",
+    "@tailwindcss/forms": "*",
+    "@tailwindcss/line-clamp": "*",
+    "@tailwindcss/typography": "*",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^9.1.2",
+    "concurrently": "^8.0.1",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "node-sass-tilde-importer": "^1.0.2",
+    "pixrem": "^5.0.0",
+    "postcss": "^8.3.11",
+    "postcss-loader": "^7.0.2",
+    "postcss-preset-env": "^9.0.0",
+    "sass": "^1.43.4",
+    "sass-loader": "^13.2.0",
+    "tailwind-scrollbar": "*",
+    "tailwind-scrollbar-hide": "*",
+    "tailwindcss": "*",
+    "webpack": "^5.65.0",
+    "webpack-bundle-tracker": "^2.0.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.6.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "dev": "concurrently npm:dev:*",
+    "build": "webpack --config webpack/prod.config.js",
+    "migrate": "./manage.py makemigrations; ./manage.py migrate",
+    "dev:webpack": "webpack serve --config webpack/dev.config.js",
+    "dev:mailpit": "~/mailpit/mailpit",
+    "dev:celery": "celery -A config.celery_app worker -l info",
+    "dev:celery-beat": "celery -A config.celery_app beat -l INFO --scheduler django_celery_beat.schedulers.DatabaseScheduler",
+    "dev:send_admin_test_mail": "./manage.py sendtestemail --admin",
+    "dev:django": "uvicorn config.asgi:application --reload --reload-include '*.html'",
+    "dev-https:django": "./manage.py runserver_plus --cert-file localhost.pem --key-file localhost-key.pem"
+  },
+  "dependencies": {
+    "@alpinejs/intersect": "^3.10.5",
+    "@ryangjchandler/alpine-mask": "^0.2.0",
+    "alpinejs": "*",
+    "animejs": "^3.2.2",
+    "axios": "^*",
+    "daisyui": "*",
+    "flowbite": "*",
+    "htmx.org": "*",
+    "intl-tel-input": "^17.0.19",
+    "izitoast": "*",
+    "mailwind": "*",
+    "particles.js": "*",
+    "scrollmagic": "^2.0.8",
+    "toastr": "*"
+  }
+}

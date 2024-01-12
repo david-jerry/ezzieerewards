@@ -1,0 +1,62 @@
+<template x-if="user !== null">
+  <section x-cloak x-show="modalForm === 'Profile'" :class="{'overflow-hidden h-0': modalForm !== 'Profile', 'overflow-y-auto max-h-[calc(100vh_-_4rem)] h-fit lg:h-fit bottom-0 lg:bottom-auto': modalForm === 'Profile'}" class="bg-light w-full rounded-t-xl lg:rounded-xl lg:w-100 lg:max-w-xl p-6 lg:mx-auto max-h-[calc(100vh_-_4rem)] lg:h-fit overflow-auto bottom-0 lg:top-16 fixed lg:bottom-auto lg:absolute flex flex-col duration-300 ease-linear">
+
+    <div class="flex items-center justify-between">
+      <h2 class="flex flex-none mb-6 font-semibold text-xl lg:text-2xl"><span class="mr-2">About</span> <span class="first-letter:uppercase" x-text="user.username"></span></h2>
+      <div class="flex gap-4">
+        <button type="button" class="w-8 h-8 flex items-center flex-col justify-center" @click="modalForm = 'UpdateProfile'">
+          <span class="iconify w-7 h-7 mx-auto" data-icon="icon-park-solid:edit-name"></span>
+        </button>
+        <button type="button" class="w-8 h-8 flex items-center flex-col justify-center" @click="modalForm = 'UpdateBank'">
+          <span class="iconify w-7 h-7 mx-auto" data-icon="fxemoji:bank"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-2 mb-6">
+      <h3 class="title">Connected Accounts</h3>
+      <div class="flex items-center gap-4">
+        <button @click="openModal('Instagram')" :class="{'text-green-400':user.instagram_id , 'text-red':!user.instagram_id}" class="hover:text-green-400 duration-150 ease-linear" :type="{'button':!user.instagram_id, 'disabled':user.instagram_id}"><span class="iconify w-6 h-6" data-icon="line-md:instagram"></span></button>
+        <button @click="openModal('Spotify')" :class="{'text-green-400':user.spotify_id , 'text-red':!user.spotify_id}" class="hover:text-green-400 duration-150 ease-linear" :type="{'button':!user.spotify_id, 'disabled':user.spotify_id}"><span class="iconify w-6 h-6" data-icon="streamline:spotify-solid"></span></button>
+        <button @click="openModal('Youtube')" :class="{'text-green-400':user.Youtube_id , 'text-red':!user.Youtube_id}" class="hover:text-green-400 duration-150 ease-linear" :type="{'button':!user.youtube_id, 'disabled':user.youtube_id}"><span class="iconify w-6 h-6" data-icon="line-md:youtube-filled"></span></button>
+      </div>
+    </div>
+
+    <div @click="withdrawAmount()" class="rounded-xl cursor-pointer mb-6 bg-primary text-light py-4 px-4 max-w-sm w-full text-center">
+      <template x-if="user.wallet !== null">
+        <span class="font-bold text-xl"><span>$</span> <span x-text="user.wallet.balance"></span></span>
+      </template>
+      <template x-if="user.wallet === null">
+        <span class="font-bold text-xl"><span>$</span> <span>0.00</span></span>
+      </template>
+    </div>
+
+    <div class="border-t-2 border-t-dark/40 h-2 mb-6"></div>
+
+    <div class="flex flex-col gap-2 mb-6">
+      <h3 class="title">Tasks Completed</h3>
+      <div class="flex items-center gap-4 w-full overflow-x-auto scrollbar-thin">
+        <div class="gap-3 flex-none w-[240px] rounded-xl hover:shadow-md p-4 bg-gray-400">
+          <div class="w-full h-auto aspect-2 bg-gray-600"></div>
+          <div class="w-full h-3"></div>
+          <div class="w-full h-8"></div>
+        </div>
+        <div class="gap-3 flex-none w-[240px] rounded-xl hover:shadow-md p-4 bg-gray-400">
+          <div class="w-full h-auto aspect-2 bg-gray-600"></div>
+          <div class="w-full h-3"></div>
+          <div class="w-full h-8"></div>
+        </div>
+        <div class="gap-3 flex-none w-[240px] rounded-xl hover:shadow-md p-4 bg-gray-400">
+          <div class="w-full h-auto aspect-2 bg-gray-600"></div>
+          <div class="w-full h-3"></div>
+          <div class="w-full h-8"></div>
+        </div>
+        <div class="gap-3 flex-none w-[240px] rounded-xl hover:shadow-md p-4 bg-gray-400">
+          <div class="w-full h-auto aspect-2 bg-gray-600"></div>
+          <div class="w-full h-3"></div>
+          <div class="w-full h-8"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

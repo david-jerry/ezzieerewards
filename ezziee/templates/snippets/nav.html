@@ -1,0 +1,36 @@
+{% load static %}
+
+<header x-init="initUser('{% if request.user.is_authenticated %}{{user}}{% else %}None{% endif %}')"
+  class="shadow w-screen py-4 padding-x flex items-center justify-between fixed top-0 left-0 right-0 z-50 bg-inherit max-h-16">
+  <a href="/" class="w-fit h-10 flex items-center gap-3">
+    <img class="w-10 h-10 object-center object-contain" src="{% static 'images/logo.svg' %}" alt="Ezziee Logo">
+    <span class="md:flex hidden gap-0 font-bold font-mus text-lg lg:text-2xl"><span class="text-primary">Ezziee</span> <span
+        class="text-secondary">Rewards</span></span>
+  </a>
+
+  <!-- <nav class="gap-4 md:flex items-center hidden">
+    <button @click="active = 2; openModal('About')" :class="{'active' : active === 2, 'text-medium': active !== 2}"
+      class="hover" type="button">About</button>
+    <button @click="active = 3; openModal('Contact')" :class="{'active' : active === 3, 'text-medium': active !== 3}"
+      class="hover" type="button">Contact</button>
+  </nav> -->
+
+
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button> -->
+    <template x-if="user === null">
+      <div class="flex items-center gap-4">
+        <button class="flex items-center gap-3 bg-secondary text-primary py-2 px-6 rounded-md" @click="openModal('Register')"
+          type="button"><span class="iconify w-6 h-6" data-icon="mdi:register"></span> <span class="md:flex hidden"> Register</span></button>
+        <button class="flex items-center gap-3 bg-primary text-white py-2 px-6 rounded-md" @click="openModal('Login')"
+          type="button"><span class="iconify w-6 h-6" data-icon="solar:login-2-bold-duotone"></span> <span class="md:flex hidden"> Login</span></button>
+      </div>
+    </template>
+    <template x-if="user !== null">
+      <div class="flex items-center gap-4">
+        <button @click="openModal('Profile')" type="button" id="profile" x-text="user.username"
+          class="bg-primary text-white py-2 px-6 rounded-md first-letter:uppercase "></button>
+        <button class="flex items-center gap-3 bg-danger text-primary py-2 px-6 rounded-md" @click="logOut" type="button"><span class="iconify w-6 h-6" data-icon="solar:logout-2-bold-duotone"></span> <span class="md:flex hidden"> Logout</span></button>
+      </div>
+    </template>
+</header>

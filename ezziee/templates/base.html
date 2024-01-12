@@ -1,0 +1,148 @@
+{% load static i18n %}
+{% load render_bundle from webpack_loader %}
+
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>
+    {% block title %}
+    Ezziee Rewards
+    {% endblock title %}
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="{% block description %}At Ezziee Rewards, we believe in the power of genuine connections between artists and their fans. We understand that the heartbeat of the music industry is fueled by passionate fans, and we're here to ensure that their dedication is not only recognized but also rewarded. In a world where artists often benefit from fan support without reciprocation, Ezziee Rewards envisions a revolutionary space. We see a collaborative environment where fans actively contribute to an artist's success, sharing not only in the joy of music but also in the tangible rewards it brings.{% endblock description %}" />
+  <meta name="author" content="{% block author %}Bytestream Innovators Limited{% endblock author %}" />
+  <link rel="icon" href="{% static 'images/logo.svg' %}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=REM:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/museo-sans-rounded" rel="stylesheet">
+
+  {% block css %}
+  <!-- Your stuff: Third-party CSS libraries go here -->
+  <!-- This file stores project-specific CSS -->
+  {% render_bundle 'project' 'css' %}
+  {% endblock css %}
+
+
+  <!-- Le javascript
+    ================================================== -->
+  {# Placed at the top of the document so pages load faster with defer #}
+  {% block javascript %}
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <!-- Vendor dependencies bundled as one file -->
+  {% render_bundle 'vendors' 'js' attrs='defer' %}
+  <!-- place project specific Javascript in this file -->
+  {% render_bundle 'project' 'js' attrs='defer' %}
+  {% endblock javascript %}
+</head>
+
+<body x-data="Global" x-init="init">
+  <script>
+    function statusChangeCallback(response) {
+      console.log('Initializing fb status check');
+      console.log(response);
+
+      if (response.status === 'connected' && response.authResponse) {
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me', { fields: 'name, email, public_profile, id' }, function (response) {
+          document.getElementById("profile").innerHTML = "Good to see you, " + response.name + "."
+        });
+        //    //f you are logged in, automatically get your name and email adress, your public profile information
+        // FB.login(function (response) {
+        //   if (response.authResponse) {
+        //     console.log('Welcome!  Fetching your information.... ');
+        //     FB.api('/me', { fields: 'name, email' }, function (response) {
+        //       document.getElementById("profile").innerHTML = "Good to see you, " + response.name + ". i see your email address is " + response.email
+        //     });
+        //   } else {
+        //     //If you are not logged in, the login dialog will open for you to login asking for permission to get your public profile and email -->
+        //     console.log('User cancelled login or did not fully authorize.');
+        //   }
+        // }, { scope: 'id,public_profile,email' });
+      } else {
+        console.log('User is not Authenticated');
+      }
+    }
+
+    function checkLoginState() {               // Called when a person is finished with the Login Button.
+      FB.getLoginStatus(function (response) {   // See the onlogin handler
+        statusChangeCallback(response);
+      });
+    }
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '{{fb_app_id}}',
+        xfbml: true,
+        version: 'v18.0'
+      });
+
+      FB.login();
+
+      FB.getLoginStatus(function (response) {
+        statusChangeCallback(response)
+      });
+
+      FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+
+  {% include "snippets/nav.html" %}
+
+  <div class="container pt-16">
+    {% block content %}
+    <p>Use this document as a way to quick start any new project.</p>
+    {% endblock content %}
+  </div>
+  <!-- /container -->
+
+  <section x-cloak x-show="modalOpened" class="fixed top-0 left-0 z-50 overflow-y-auto w-screen h-screen bg-black/80 flex flex-col items-center justify-center">
+    <div @click="disableAllActive(false)" class="w-screen h-screen"></div>
+
+    {% include "snippets/forms/loginForm.html" %}
+    {% include "snippets/forms/instagramForm.html" %}
+    {% include "snippets/forms/registerForm.html" %}
+    {% include "snippets/forms/resendForm.html" %}
+    {% include "snippets/forms/resetForm.html" %}
+    {% include "snippets/forms/verifyForm.html" %}
+    {% include "snippets/forms/spotifyForm.html" %}
+    {% include "pages/about.html" %}
+    {% include "users/user_detail.html" %}
+    {% include "users/user_form.html" %}
+    {% include "users/user_bank.html" %}
+  </section>
+
+  <button class="bg-primary text-light w-8 h-8 rounded-full flex flex-col justify-center flex-none fixed bottom-8 right-2 lg:right-8 animate-bounce" @click="active = 2; openModal('About')">
+    <span class="iconify w-6 h-6 flex-none mx-auto" data-icon="icon-park-twotone:info"></span>
+  </button>
+
+  {% block modal %}
+  {% endblock modal %}
+
+  {% block inline_javascript %}
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+    });
+  </script>
+  {% endblock inline_javascript %}
+
+</body>
+
+</html>

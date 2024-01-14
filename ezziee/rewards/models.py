@@ -99,7 +99,7 @@ class RewardRequests(TimeStampedModel):
             self.active = True
             self.save(update_fields=['active'])
         return self.active
-    
+
     # def get_actions(self):
     #     if self.actions.exists():
     #         return self.actions.all()
@@ -164,7 +164,7 @@ class RewardActions(TimeStampedModel):
     platform = CharField(max_length=25, choices=PLATFORM, default=FACEBOOK)
 
     def __str__(self):
-        return f"{self.reward.title} | Action: {self.action} | Plt: {self.platfrom}"
+        return f"{self.reward.title} | Action: {self.action} | Plt: {self.platform}"
 
     class Meta:
         verbose_name = _("Reward Action")

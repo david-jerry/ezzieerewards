@@ -139,12 +139,16 @@ class RewardActions(TimeStampedModel):
         str(self): Returns a concise representation of the reward, including its action and platform action was performed on.
     """
     COMMENTS = "COMMENTS"
-    LIKES = "LIKES"
-    FOLLOWING = "FOLLOWING"
+    LIKE = "LIKE"
+    FOLLOW = "FOLLOW"
+    SAVE = "SAVE"
+    SHARE = 'SHARE'
     ACTIONS = (
         (COMMENTS, COMMENTS),
-        (LIKES, LIKES),
-        (FOLLOWING, FOLLOWING),
+        (LIKE, LIKE),
+        (FOLLOW, FOLLOW),
+        (SAVE, SAVE),
+        (SHARE, SHARE)
     )
 
     FACEBOOK = "FACEBOOK"
@@ -159,9 +163,27 @@ class RewardActions(TimeStampedModel):
         (TWITTER, TWITTER),
         (SPOTIFY, SPOTIFY),
     )
+
+    LIKE_POST = "LIKE_POST"
+    FOLLOW_ARTIST = "FOLLOW_ARTIST"
+    FOLLOW_PLAYLIST = "FOLLOW_PLAYLIST"
+    SAVE_ALBUM = "SAVE_ALBUM"
+    SAVE_TRACK = "SAVE_TRACK"
+    SHARE_POST = "SHARE_POST"
+
+
+    ENDPOINT = (
+        (LIKE_POST, LIKE_POST),
+        (FOLLOW_ARTIST, FOLLOW_ARTIST),
+        (FOLLOW_PLAYLIST, FOLLOW_PLAYLIST),
+        (SAVE_ALBUM, SAVE_ALBUM),
+        (SAVE_TRACK, SAVE_TRACK),
+        (SHARE_POST, SHARE_POST),
+    )
     reward = ForeignKey(RewardRequests, on_delete=CASCADE, related_name="actions")
     action = CharField(max_length=25, choices=ACTIONS, default=COMMENTS)
     platform = CharField(max_length=25, choices=PLATFORM, default=FACEBOOK)
+    endpoint = CharField(max_length=255, choices=ENDPOINT, default=LIKE_POST)
 
     def __str__(self):
         return f"{self.reward.title} | Action: {self.action} | Plt: {self.platform}"

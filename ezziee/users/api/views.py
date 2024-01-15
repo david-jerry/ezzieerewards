@@ -1138,28 +1138,28 @@ class UserViewSet(RetrieveModelMixin, ListModelMixin, UpdateModelMixin, GenericV
         # Return a JSON response
         return Response(status=status.HTTP_200_OK, data={"top_users": list(top_users)})
 
-    # @action(detail=True, methods=["post"])
-    # def update_facebook_token(self, request):
-    #     try:
-    #         # Assuming the token is provided in the request data as 'facebook_token'
-    #         facebook_token = request.data.get("access_token")
-    #         facebook_user_id = request.data.get("id")
+    @action(detail=True, methods=["post"])
+    def update_facebook_token(self, request):
+        try:
+            # Assuming the token is provided in the request data as 'facebook_token'
+            facebook_token = request.data.get("access_token")
+            facebook_user_id = request.data.get("id")
 
-    #         if facebook_token:
-    #             user = request.user
-    #             user.facebook_token = facebook_token
-    #             user.facebook_id = facebook_user_id
-    #             user.save()
+            if facebook_token:
+                user = request.user
+                user.facebook_token = facebook_token
+                user.facebook_id = facebook_user_id
+                user.save()
 
-    #             serializer = UserSerializer(user, context={"request": request})
-    #             return Response(
-    #                 status=status.HTTP_200_OK,
-    #                 data={"detail": _("Facebook token updated successfully"), "userData": serializer.data},
-    #             )
-    #         else:
-    #             return Response(status=status.HTTP_400_BAD_REQUEST, data={"detail": _("Facebook token is required")})
-    #     except:
-    #         raise UnAuthenticatedUserOrExistsException
+                serializer = UserSerializer(user, context={"request": request})
+                return Response(
+                    status=status.HTTP_200_OK,
+                    data={"detail": _("Facebook token updated successfully"), "userData": serializer.data},
+                )
+            else:
+                return Response(status=status.HTTP_400_BAD_REQUEST, data={"detail": _("Facebook token is required")})
+        except:
+            raise UnAuthenticatedUserOrExistsException
 
     @action(detail=False, methods=["get"], url_path="connect/spotify/get-authorization-url")
     def get_spotify_authorization_url(self, request):

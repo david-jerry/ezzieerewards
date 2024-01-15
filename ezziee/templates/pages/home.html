@@ -68,7 +68,7 @@
             <strong class="title">Actions</strong>
             <div class="flex items-center gap-3 w-full overflow-x-auto relative">
               <template x-for="action in task.actions">
-                <button
+                <button @click="performAction(task.id, action.plaform, action.endpoint)"
                   class="w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2"><span
                     class="flex" x-text="action.platform"></span> <span class="flex"
                     x-text="action.action"></span></button>

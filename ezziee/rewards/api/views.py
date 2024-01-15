@@ -110,7 +110,7 @@ class RewardActionsViewset(UpdateModelMixin, BaseGenericViewSet):
                 LOGGER.info(pprint(res))
 
                 if res['status'] == 'success':
-                    complted_task = CompletedActions.objects.get_or_create(user=request.user, tasks=action.reward)
+                    complted_task = CompletedActions.objects.get_or_create(user=request.user, defaults={'task':action.reward, 'user':request.user, 'point':1})
                     complted_task.point += 1
                     complted_task.save()
                     if complted_task.completed_all_tasks:
@@ -168,7 +168,7 @@ class RewardActionsViewset(UpdateModelMixin, BaseGenericViewSet):
 
                 LOGGER.info(pprint(res))
                 if res['status'] == 'success':
-                    complted_task = CompletedActions.objects.get_or_create(user=request.user, tasks=action.reward)
+                    complted_task = CompletedActions.objects.get_or_create(user=request.user, defaults={'task':action.reward, 'user':request.user, 'point':1})
                     complted_task.point += 1
                     complted_task.save()
                     if complted_task.completed_all_tasks:

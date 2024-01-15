@@ -19,7 +19,7 @@ class CompletedActionsSerializers(serializers.ModelSerializer):
 class RewardActionsSerializer(serializers.ModelSerializer):
     class Meta:
         model = RewardActions
-        fields = ['id', "reward", 'action', 'platform']
+        fields = ['id', "reward", 'action', 'platform', 'endpoint']
         read_only_fields = ['reward']
         # extra_kwargs = {"url": {"view_name": "api:rewardtask-detail", "lookup_field": "id"}}
 

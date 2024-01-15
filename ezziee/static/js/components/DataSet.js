@@ -202,6 +202,49 @@ export default function DataSet() {
             }
         },
 
+        async performAction(id, platform, endpoint) {
+            url = `/api/v1/rewards/tasks/${id}/${platform.toLowerCase()}_${endpoint.toLowerCase()}`
+            await axios.get(url)
+            .then(async (response) => {
+                iziToast.success(
+                    {
+                        title: "Action Successful",
+                        balloon: true,
+                        position: 'topRight',
+                        animateInside: true,
+                        message: response.data.detail
+                    }
+                );;
+                await this.getAllActiveTasks();
+            }).catch(async (error) => {
+                if (error.response) {
+                    iziToast.error(
+                        {
+                            title: "Error Completing Action",
+                            balloon: true,
+                            position: 'topRight',
+                            animateInside: true,
+                            message: error.response.data.detail
+                        }
+                    );
+                    if (error.response.data.error_message === 'Token is invalid or expired') {
+                        await this.refreshToken(this.connectInstagram);
+                    }
+                } else {
+                    iziToast.error(
+                        {
+                            title: "Action Error",
+                            balloon: true,
+                            position: 'topLeft',
+                            animateInside: true,
+                            message: error
+                        }
+                    );
+                }
+            })
+
+        },
+
         // monetize
         async getAllBanks() {
             let nextUrl = '/api/v1/monetize/banks/';

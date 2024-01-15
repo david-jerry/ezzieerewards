@@ -69,17 +69,19 @@
             <div class="flex items-center gap-3 w-full overflow-x-auto relative">
               <template x-for="action in task.actions">
                 <template x-if="action.platform.toUpperCase() === 'FACEBOOK' && action.action === 'LIKE'">
-                  <div class="fb-like" data-href=action.url data-width="" data-layout="standard" data-action="like"
+                   <!-- @click="performFacebookLikeAction" -->
+                  <div class="fb-like w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2" data-href=action.url data-width="" data-layout="standard" data-action="like"
                     data-size="small" data-share="true">
                   </div>
                 </template>
 
                 <template x-if="action.platform.toUpperCase() === 'FACEBOOK' && action.action === 'SHARE'">
-                  <div class="fb-share-button" data-href=action.url data-layout="button_count">
+                   <!-- @click="performFacebookShareAction" -->
+                  <div class="fb-share-button w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2" data-href=action.url data-layout="button_count">
                   </div>
                 </template>
 
-                <template x-if="action.platform.toUpperCase() === 'FACEBOOK'">
+                <template x-if="action.platform.toUpperCase() !== 'FACEBOOK'">
                   <button @click="performAction(task.id, action.plaform, action.endpoint)"
                     class="w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2"><span
                       class="flex" x-text="action.platform"></span> <span class="flex"

@@ -1138,7 +1138,7 @@ class UserViewSet(RetrieveModelMixin, ListModelMixin, UpdateModelMixin, GenericV
         # Return a JSON response
         return Response(status=status.HTTP_200_OK, data={"top_users": list(top_users)})
 
-    @action(detail=True, methods=["post"])
+    @action(detail=True, methods=["post"], url_path="connect/facebook/update-token")
     def update_facebook_token(self, request):
         try:
             # Assuming the token is provided in the request data as 'facebook_token'

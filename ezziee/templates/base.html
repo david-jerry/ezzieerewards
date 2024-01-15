@@ -1,3 +1,5 @@
+
+import axios from 'axios';
 {% load static i18n %}
 {% load render_bundle from webpack_loader %}
 
@@ -8,6 +10,13 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <meta property="og:url"           content="https://ezzieerewards.com" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Ezziee Rewards" />
+  <meta property="og:description"   content="At Ezziee Rewards, we believe in the power of genuine connections between artists and their fans. We understand that the heartbeat of the music industry is fueled by passionate fans, and we're here to ensure that their dedication is not only recognized but also rewarded. In a world where artists often benefit from fan support without reciprocation, Ezziee Rewards envisions a revolutionary space. We see a collaborative environment where fans actively contribute to an artist's success, sharing not only in the joy of music but also in the tangible rewards it brings." />
+  <meta property="og:image"         content="{% static 'images/logo.svg' %}" />
+
   <title>
     {% block title %}
     Ezziee Rewards
@@ -54,6 +63,9 @@
         FB.api('/me', { fields: 'name, email, public_profile, id' }, function (response) {
           document.getElementById("profile").innerHTML = "Good to see you, " + response.name + "."
         });
+
+        axios.get('/api/v1/')
+
         //    //f you are logged in, automatically get your name and email adress, your public profile information
         // FB.login(function (response) {
         //   if (response.authResponse) {
@@ -86,9 +98,7 @@
 
       FB.login();
 
-      FB.getLoginStatus(function (response) {
-        statusChangeCallback(response)
-      });
+      checkLoginState();
 
       FB.AppEvents.logPageView();
     };
@@ -102,7 +112,6 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
 
   {% include "snippets/nav.html" %}
 

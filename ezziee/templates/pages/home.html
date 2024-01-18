@@ -68,7 +68,7 @@
             <strong class="title">Actions</strong>
             <div class="flex items-center gap-3 w-full overflow-x-auto relative">
               <template x-for="action in task.actions">
-                <p>action.platform</p>
+                <p x-text="action.platform"></p>
                 <template x-if="action.platform === 'FACEBOOK' && action.action === 'LIKE'">
                   <div class="fb-like w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2" data-href=action.url data-width="" data-layout="standard" data-action="like"
                     data-size="small" data-share="true">

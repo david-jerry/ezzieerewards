@@ -11,61 +11,138 @@
       "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/9d5328fb490cddd43f66.png",
       "publicPath": "/static/webpack_bundles/9d5328fb490cddd43f66.png"
     },
-    "css/project.5d627adb68233b06f376.css": {
-      "name": "css/project.5d627adb68233b06f376.css",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/project.5d627adb68233b06f376.css",
-      "publicPath": "/static/webpack_bundles/css/project.5d627adb68233b06f376.css"
+    "css/project.23850c060f4aa17e34e8.css": {
+      "name": "css/project.23850c060f4aa17e34e8.css",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/project.23850c060f4aa17e34e8.css",
+      "publicPath": "/static/webpack_bundles/css/project.23850c060f4aa17e34e8.css"
     },
-    "css/project.5d627adb68233b06f376.css.map": {
-      "name": "css/project.5d627adb68233b06f376.css.map",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/project.5d627adb68233b06f376.css.map",
-      "publicPath": "/static/webpack_bundles/css/project.5d627adb68233b06f376.css.map"
+    "css/vendors.fbd62e413908c2d9ee0e.css": {
+      "name": "css/vendors.fbd62e413908c2d9ee0e.css",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/vendors.fbd62e413908c2d9ee0e.css",
+      "publicPath": "/static/webpack_bundles/css/vendors.fbd62e413908c2d9ee0e.css"
     },
-    "css/vendors.9ae8961cb1f2b617a87b.css": {
-      "name": "css/vendors.9ae8961cb1f2b617a87b.css",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css",
-      "publicPath": "/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css"
+    "js/project-0046be3672fd0d772937.js": {
+      "name": "js/project-0046be3672fd0d772937.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-0046be3672fd0d772937.js",
+      "publicPath": "/static/webpack_bundles/js/project-0046be3672fd0d772937.js"
     },
-    "css/vendors.9ae8961cb1f2b617a87b.css.map": {
-      "name": "css/vendors.9ae8961cb1f2b617a87b.css.map",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css.map",
-      "publicPath": "/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css.map"
+    "js/project-2301b0207447750de6e9.js": {
+      "name": "js/project-2301b0207447750de6e9.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-2301b0207447750de6e9.js",
+      "publicPath": "/static/webpack_bundles/js/project-2301b0207447750de6e9.js"
     },
-    "js/project-c4a66198479caf8532b8.js": {
-      "name": "js/project-c4a66198479caf8532b8.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-c4a66198479caf8532b8.js",
-      "publicPath": "/static/webpack_bundles/js/project-c4a66198479caf8532b8.js"
+    "js/project-28c7fe1f45c95d45ce60.js": {
+      "name": "js/project-28c7fe1f45c95d45ce60.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-28c7fe1f45c95d45ce60.js",
+      "publicPath": "/static/webpack_bundles/js/project-28c7fe1f45c95d45ce60.js"
     },
-    "js/project-c4a66198479caf8532b8.js.map": {
-      "name": "js/project-c4a66198479caf8532b8.js.map",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-c4a66198479caf8532b8.js.map",
-      "publicPath": "/static/webpack_bundles/js/project-c4a66198479caf8532b8.js.map"
+    "js/project-54cdab2c88b5c8f8cd5c.js": {
+      "name": "js/project-54cdab2c88b5c8f8cd5c.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-54cdab2c88b5c8f8cd5c.js",
+      "publicPath": "/static/webpack_bundles/js/project-54cdab2c88b5c8f8cd5c.js"
     },
-    "js/vendors-c4a66198479caf8532b8.js": {
-      "name": "js/vendors-c4a66198479caf8532b8.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-c4a66198479caf8532b8.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-c4a66198479caf8532b8.js"
+    "js/project-6bdcf4c3fe6df54f73ba.js": {
+      "name": "js/project-6bdcf4c3fe6df54f73ba.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-6bdcf4c3fe6df54f73ba.js",
+      "publicPath": "/static/webpack_bundles/js/project-6bdcf4c3fe6df54f73ba.js"
     },
-    "js/vendors-c4a66198479caf8532b8.js.LICENSE.txt": {
-      "name": "js/vendors-c4a66198479caf8532b8.js.LICENSE.txt",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-c4a66198479caf8532b8.js.LICENSE.txt",
-      "publicPath": "/static/webpack_bundles/js/vendors-c4a66198479caf8532b8.js.LICENSE.txt"
+    "js/project-8722cc8fc0157235bd93.js": {
+      "name": "js/project-8722cc8fc0157235bd93.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-8722cc8fc0157235bd93.js",
+      "publicPath": "/static/webpack_bundles/js/project-8722cc8fc0157235bd93.js"
     },
-    "js/vendors-c4a66198479caf8532b8.js.map": {
-      "name": "js/vendors-c4a66198479caf8532b8.js.map",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-c4a66198479caf8532b8.js.map",
-      "publicPath": "/static/webpack_bundles/js/vendors-c4a66198479caf8532b8.js.map"
+    "js/project-b3e875a2a3c8e8ad08ab.js": {
+      "name": "js/project-b3e875a2a3c8e8ad08ab.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-b3e875a2a3c8e8ad08ab.js",
+      "publicPath": "/static/webpack_bundles/js/project-b3e875a2a3c8e8ad08ab.js"
+    },
+    "js/project-d66814f6b873c66937f3.js": {
+      "name": "js/project-d66814f6b873c66937f3.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-d66814f6b873c66937f3.js",
+      "publicPath": "/static/webpack_bundles/js/project-d66814f6b873c66937f3.js"
+    },
+    "js/project-e21d01d98ce8d77a3717.js": {
+      "name": "js/project-e21d01d98ce8d77a3717.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-e21d01d98ce8d77a3717.js",
+      "publicPath": "/static/webpack_bundles/js/project-e21d01d98ce8d77a3717.js"
+    },
+    "js/project-f5778904b695ef6097e8.js": {
+      "name": "js/project-f5778904b695ef6097e8.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-f5778904b695ef6097e8.js",
+      "publicPath": "/static/webpack_bundles/js/project-f5778904b695ef6097e8.js"
+    },
+    "js/project-f7ffccbbae31f87ca7ce.js": {
+      "name": "js/project-f7ffccbbae31f87ca7ce.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-f7ffccbbae31f87ca7ce.js",
+      "publicPath": "/static/webpack_bundles/js/project-f7ffccbbae31f87ca7ce.js"
+    },
+    "js/vendors-0046be3672fd0d772937.js": {
+      "name": "js/vendors-0046be3672fd0d772937.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-0046be3672fd0d772937.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-0046be3672fd0d772937.js"
+    },
+    "js/vendors-2301b0207447750de6e9.js": {
+      "name": "js/vendors-2301b0207447750de6e9.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-2301b0207447750de6e9.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-2301b0207447750de6e9.js"
+    },
+    "js/vendors-28c7fe1f45c95d45ce60.js": {
+      "name": "js/vendors-28c7fe1f45c95d45ce60.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-28c7fe1f45c95d45ce60.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-28c7fe1f45c95d45ce60.js"
+    },
+    "js/vendors-54cdab2c88b5c8f8cd5c.js": {
+      "name": "js/vendors-54cdab2c88b5c8f8cd5c.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-54cdab2c88b5c8f8cd5c.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-54cdab2c88b5c8f8cd5c.js"
+    },
+    "js/vendors-6bdcf4c3fe6df54f73ba.js": {
+      "name": "js/vendors-6bdcf4c3fe6df54f73ba.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-6bdcf4c3fe6df54f73ba.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-6bdcf4c3fe6df54f73ba.js"
+    },
+    "js/vendors-8722cc8fc0157235bd93.js": {
+      "name": "js/vendors-8722cc8fc0157235bd93.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-8722cc8fc0157235bd93.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-8722cc8fc0157235bd93.js"
+    },
+    "js/vendors-b3e875a2a3c8e8ad08ab.js": {
+      "name": "js/vendors-b3e875a2a3c8e8ad08ab.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-b3e875a2a3c8e8ad08ab.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-b3e875a2a3c8e8ad08ab.js"
+    },
+    "js/vendors-d66814f6b873c66937f3.js": {
+      "name": "js/vendors-d66814f6b873c66937f3.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-d66814f6b873c66937f3.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-d66814f6b873c66937f3.js"
+    },
+    "js/vendors-e21d01d98ce8d77a3717.js": {
+      "name": "js/vendors-e21d01d98ce8d77a3717.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-e21d01d98ce8d77a3717.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-e21d01d98ce8d77a3717.js"
+    },
+    "js/vendors-f5778904b695ef6097e8.js": {
+      "name": "js/vendors-f5778904b695ef6097e8.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-f5778904b695ef6097e8.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-f5778904b695ef6097e8.js"
+    },
+    "js/vendors-f7ffccbbae31f87ca7ce.js": {
+      "name": "js/vendors-f7ffccbbae31f87ca7ce.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-f7ffccbbae31f87ca7ce.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-f7ffccbbae31f87ca7ce.js"
     }
   },
   "chunks": {
     "project": [
-      "js/project-c4a66198479caf8532b8.js",
-      "css/project.5d627adb68233b06f376.css"
+      "css/project.23850c060f4aa17e34e8.css",
+      "js/project-28c7fe1f45c95d45ce60.js"
     ],
     "vendors": [
-      "js/vendors-c4a66198479caf8532b8.js",
-      "css/vendors.9ae8961cb1f2b617a87b.css"
+      "css/vendors.fbd62e413908c2d9ee0e.css",
+      "js/vendors-28c7fe1f45c95d45ce60.js"
     ]
   },
-  "publicPath": "/static/webpack_bundles/"
+  "publicPath": "/static/webpack_bundles/",
+  "error": "ModuleBuildError",
+  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/darkcodr/www/darkcodr/ezziee/ezziee/static/js/components/DataSet.js: Unexpected token (206:46)\n\n  204 |\n  205 |         async performAction(id, platform, endpoint) {\n> 206 |             console.dir(`${id} ${platform}, ${}`)\n      |                                               ^\n  207 |             this.loading = true;\n  208 |             url = `/api/v1/rewards/tasks/${id}/${platform.toLowerCase()}_${endpoint.toLowerCase()}`\n  209 |             await axios.get(url)\n    at constructor (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:356:19)\n    at Parser.raise (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:3223:19)\n    at Parser.unexpected (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:3253:16)\n    at Parser.parseExprAtom (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11257:16)\n    at Parser.parseExprSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10857:23)\n    at Parser.parseUpdate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10840:21)\n    at Parser.parseMaybeUnary (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10816:23)\n    at Parser.parseMaybeUnaryOrPrivate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10654:61)\n    at Parser.parseExprOps (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeConditional (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10636:23)\n    at Parser.parseMaybeAssign (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10597:21)\n    at Parser.parseExpressionBase (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10551:23)\n    at /home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10547:39\n    at Parser.allowInAnd (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12284:12)\n    at Parser.parseExpression (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10547:17)\n    at Parser.parseTemplateSubstitution (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11633:17)\n    at Parser.parseTemplate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11626:34)\n    at Parser.parseExprAtom (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11167:21)\n    at Parser.parseExprSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10857:23)\n    at Parser.parseUpdate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10840:21)\n    at Parser.parseMaybeUnary (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10816:23)\n    at Parser.parseMaybeUnaryOrPrivate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10654:61)\n    at Parser.parseExprOps (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeConditional (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10636:23)\n    at Parser.parseMaybeAssign (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10597:21)\n    at /home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10567:39\n    at Parser.allowInAnd (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12284:12)\n    at Parser.parseMaybeAssignAllowIn (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10567:17)\n    at Parser.parseExprListItem (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12020:18)\n    at Parser.parseCallExpressionArguments (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11054:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10964:29)\n    at Parser.parseSubscript (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10899:19)\n    at Parser.parseSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10870:19)\n    at Parser.parseExprSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10861:17)\n    at Parser.parseUpdate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10840:21)\n    at Parser.parseMaybeUnary (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10816:23)\n    at Parser.parseMaybeUnaryOrPrivate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10654:61)\n    at Parser.parseExprOps (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeConditional (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10636:23)\n    at Parser.parseMaybeAssign (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10597:21)\n    at Parser.parseExpressionBase (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10551:23)\n    at /home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10547:39\n    at Parser.allowInAnd (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12279:16)\n    at Parser.parseExpression (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10547:17)\n    at Parser.parseStatementContent (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12737:23)\n    at Parser.parseStatementLike (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12588:17)\n    at Parser.parseStatementListItem (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12568:17)\n    at Parser.parseBlockOrModuleBlockBody (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:13189:61)\n    at Parser.parseBlockBody (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:13182:10)\n    at Parser.parseBlock (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:13170:10)"
 }

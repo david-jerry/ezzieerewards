@@ -1,7 +1,5 @@
 <template x-if="user !== null">
-  <form x-cloak x-show="modalForm === 'Instagram'"
-    :class="{'overflow-hidden h-0': modalForm !== 'Instagram', 'overflow-y-auto max-h-[calc(100vh_-_4rem)] h-fit lg:h-fit bottom-0 lg:bottom-auto': modalForm === 'Instagram'}"
-    class="bg-light w-full rounded-t-xl lg:rounded-xl lg:w-100 lg:max-w-xl p-6 lg:mx-auto max-h-[calc(100vh_-_4rem)] lg:h-fit overflow-auto bottom-0 lg:top-16 fixed lg:bottom-auto lg:absolute flex flex-col duration-300 ease-linear">
+  <form @submit.prevent="connectInstagram()" x-cloak x-show="modalForm === 'Instagram'" :class="{'overflow-hidden h-0': modalForm !== 'Instagram', 'overflow-y-auto max-h-[calc(100vh_-_4rem)] h-fit lg:h-fit bottom-0 lg:bottom-auto': modalForm === 'Instagram'}" class="bg-light w-full rounded-t-xl lg:rounded-xl lg:w-100 lg:max-w-xl p-6 lg:mx-auto max-h-[calc(100vh_-_4rem)] lg:h-fit overflow-auto bottom-0 lg:top-16 fixed lg:bottom-auto lg:absolute flex flex-col duration-300 ease-linear">
     <div class="flex items-center gap-2 mb-6">
       <button type="button" @click="modalForm = 'Profile'" class="w-7 h-7 flex flex-col items-center justify-center">
         <span class="iconify" data-icon="ic:outline-arrow-back-ios"></span>
@@ -29,8 +27,10 @@
         class="order-2 lg:order-1 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-danger text-light"
         type="reset">Reset</button>
       <button
-        class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light"
-        @click="connectInstagram()" type="button">Submit</button>
+        class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light" type="submit">
+        Submit
+        <span x-show="loading" x-cloak class="ml-2 spinner-border spinner-border-sm" role="status"></span>
+      </button>
     </div>
   </form>
 </template>

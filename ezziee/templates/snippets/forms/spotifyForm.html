@@ -20,9 +20,10 @@
       <button
         class="order-2 lg:order-1 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-danger text-light"
         type="reset">Reset</button>
-      <button
-        class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light"
-        @click="connectSpotify()" type="button">Submit</button>
+      <button class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light" @click="connectSpotify()" type="submit">
+        Submit
+        <span x-show="loading" x-cloak class="ml-2 spinner-border spinner-border-sm" role="status"></span>
+      </button>
     </div>
   </form>
 </template>

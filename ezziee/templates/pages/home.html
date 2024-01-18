@@ -68,28 +68,37 @@
             <strong class="title">Actions</strong>
             <div class="flex items-center gap-3 w-full overflow-x-auto relative">
               <template x-for="action in task.actions">
-                <p x-text="action.platform"></p>
+                <template x-if="action.platform !== 'FACEBOOK'">
+                  <button type="button" @click="performAction(task.id, action.platform, action.endpoint)" class="w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2">
+                    <span class="flex" x-text="action.platform"></span> <span class="flex" x-text="action.action"></span>
+                    <span x-show="loading" x-cloak class="ml-2 spinner-border spinner-border-sm" role="status"></span>
+                  </button>
+                </template>
+
                 <template x-if="action.platform === 'FACEBOOK' && action.action === 'LIKE'">
-                  <div class="fb-like w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2" data-href=action.url data-width="" data-layout="standard" data-action="like"
-                    data-size="small" data-share="true">
+                  <div
+                    class="fb-like w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2"
+                    data-href=action.url data-width="" data-layout="standard" data-action="like" data-size="small"
+                    data-share="true">
                   </div>
                 </template>
 
                 <template x-if="action.platform === 'FACEBOOK' && action.action === 'SHARE'">
-                  <div class="fb-share-button w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2" data-href=action.url data-layout="button_count">
+                  <div
+                    class="fb-share-button w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2"
+                    data-href=action.url data-layout="button_count">
                   </div>
                 </template>
 
-                  <button type="button" @click="performAction(task.id, action.plaform, action.endpoint)"
-                    class="w-36 rounded-lg py-2 px-6 flex-none flex items-center bg-primary text-light text-xs font-medium space-x-2"><span
-                      class="flex" x-text="action.platform"></span> <span class="flex"
-                      x-text="action.action"></span></button>
+
               </template>
 
               <template x-if="user === null">
                 <div class="py-2 w-full h-14 bg-dark/60 absolute left-0 top-0 right-0 flex flex-col justify-center">
-                  <button type="button" @click="modalForm = 'Login'"
-                    class="bg-primary text-sm text-light py-2 px-6 mx-auto">Login</button>
+                  <button type="button" @click="modalForm = 'Login'" class="bg-primary text-sm text-light py-2 px-6 mx-auto">
+                    Login
+                    <span x-show="loading" x-cloak class="ml-2 spinner-border spinner-border-sm" role="status"></span>
+                  </button>
                 </div>
               </template>
             </div>

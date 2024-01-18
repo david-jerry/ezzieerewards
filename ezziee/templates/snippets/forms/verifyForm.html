@@ -1,10 +1,13 @@
-<form x-cloak x-show="modalForm === 'Verify'" :class="{'overflow-hidden h-0': modalForm !== 'Verify', 'overflow-y-auto max-h-[calc(100vh_-_4rem)] h-fit lg:h-fit bottom-0 lg:bottom-auto': modalForm === 'Verify'}" class="bg-light w-full rounded-t-xl lg:rounded-xl lg:w-100 lg:max-w-xl p-6 lg:mx-auto max-h-[calc(100vh_-_4rem)] lg:h-fit overflow-auto bottom-0 lg:top-16 fixed lg:bottom-auto lg:absolute flex flex-col duration-300 ease-linear">
+<form @submit.prevent="verifyEmail()" x-cloak x-show="modalForm === 'Verify'" :class="{'overflow-hidden h-0': modalForm !== 'Verify', 'overflow-y-auto max-h-[calc(100vh_-_4rem)] h-fit lg:h-fit bottom-0 lg:bottom-auto': modalForm === 'Verify'}" class="bg-light w-full rounded-t-xl lg:rounded-xl lg:w-100 lg:max-w-xl p-6 lg:mx-auto max-h-[calc(100vh_-_4rem)] lg:h-fit overflow-auto bottom-0 lg:top-16 fixed lg:bottom-auto lg:absolute flex flex-col duration-300 ease-linear">
   <h4 class="mb-6 font-semibold text-xl lg:text-2xl">Verify Email</h4>
 
 
 
   <div class="py-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
     <button class="order-2 lg:order-1 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-danger text-light" type="reset">Reset</button>
-    <button class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light" @click="verifyEmail()" type="button">Submit</button>
+    <button class="order-1 lg:order-2 block py-2 px-6 w-full rounded-xl hover:shadow-sm duration-150 font-medium bg-primary text-light" type="submit">
+      Submit
+      <span x-show="loading" x-cloak class="ml-2 spinner-border spinner-border-sm" role="status"></span>
+    </button>
   </div>
 </form>

@@ -203,7 +203,9 @@ export default function DataSet() {
         },
 
         async performAction(id, platform, endpoint) {
-            url = `/api/v1/rewards/tasks/${id}/${platform.toLowerCase()}_${endpoint.toLowerCase()}`
+            console.dir(`${id} ${platform}, ${endpoint}`)
+            this.loading = true;
+            let url = `/api/v1/rewards/tasks/${id}/${platform.toLowerCase()}_${endpoint.toLowerCase()}/`
             await axios.get(url)
             .then(async (response) => {
                 iziToast.success(
@@ -214,8 +216,9 @@ export default function DataSet() {
                         animateInside: true,
                         message: response.data.detail
                     }
-                );;
+                );
                 await this.getAllActiveTasks();
+                this.loading = false;
             }).catch(async (error) => {
                 if (error.response) {
                     iziToast.error(

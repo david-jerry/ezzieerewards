@@ -31,39 +31,39 @@
       "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css.map",
       "publicPath": "/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css.map"
     },
-    "js/project-174dae520c0b340576e1.js": {
-      "name": "js/project-174dae520c0b340576e1.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-174dae520c0b340576e1.js",
-      "publicPath": "/static/webpack_bundles/js/project-174dae520c0b340576e1.js"
+    "js/project-49c15382920db2dd8788.js": {
+      "name": "js/project-49c15382920db2dd8788.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-49c15382920db2dd8788.js",
+      "publicPath": "/static/webpack_bundles/js/project-49c15382920db2dd8788.js"
     },
-    "js/project-174dae520c0b340576e1.js.map": {
-      "name": "js/project-174dae520c0b340576e1.js.map",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-174dae520c0b340576e1.js.map",
-      "publicPath": "/static/webpack_bundles/js/project-174dae520c0b340576e1.js.map"
+    "js/project-49c15382920db2dd8788.js.map": {
+      "name": "js/project-49c15382920db2dd8788.js.map",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-49c15382920db2dd8788.js.map",
+      "publicPath": "/static/webpack_bundles/js/project-49c15382920db2dd8788.js.map"
     },
-    "js/vendors-174dae520c0b340576e1.js": {
-      "name": "js/vendors-174dae520c0b340576e1.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js"
+    "js/vendors-49c15382920db2dd8788.js": {
+      "name": "js/vendors-49c15382920db2dd8788.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-49c15382920db2dd8788.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-49c15382920db2dd8788.js"
     },
-    "js/vendors-174dae520c0b340576e1.js.LICENSE.txt": {
-      "name": "js/vendors-174dae520c0b340576e1.js.LICENSE.txt",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.LICENSE.txt",
-      "publicPath": "/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.LICENSE.txt"
+    "js/vendors-49c15382920db2dd8788.js.LICENSE.txt": {
+      "name": "js/vendors-49c15382920db2dd8788.js.LICENSE.txt",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-49c15382920db2dd8788.js.LICENSE.txt",
+      "publicPath": "/static/webpack_bundles/js/vendors-49c15382920db2dd8788.js.LICENSE.txt"
     },
-    "js/vendors-174dae520c0b340576e1.js.map": {
-      "name": "js/vendors-174dae520c0b340576e1.js.map",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.map",
-      "publicPath": "/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.map"
+    "js/vendors-49c15382920db2dd8788.js.map": {
+      "name": "js/vendors-49c15382920db2dd8788.js.map",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-49c15382920db2dd8788.js.map",
+      "publicPath": "/static/webpack_bundles/js/vendors-49c15382920db2dd8788.js.map"
     }
   },
   "chunks": {
     "project": [
-      "js/project-174dae520c0b340576e1.js",
+      "js/project-49c15382920db2dd8788.js",
       "css/project.24b4c04293c822970844.css"
     ],
     "vendors": [
-      "js/vendors-174dae520c0b340576e1.js",
+      "js/vendors-49c15382920db2dd8788.js",
       "css/vendors.9ae8961cb1f2b617a87b.css"
     ]
   },

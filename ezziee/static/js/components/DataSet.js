@@ -187,7 +187,7 @@ export default function DataSet() {
                         message: error.response.data.error_message
                     });
 
-                    if (error.response.data.error_message === 'Token is invalid or expired') {
+                    if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                         await this.refreshToken(this.connectInstagram);
                     }
                 } else {
@@ -207,45 +207,76 @@ export default function DataSet() {
             this.loading = true;
             let url = `/api/v1/rewards/tasks/${id}/${platform.toLowerCase()}_${endpoint.toLowerCase()}/`
             await axios.get(url)
-            .then(async (response) => {
-                iziToast.success(
-                    {
-                        title: "Action Successful",
-                        balloon: true,
-                        position: 'topRight',
-                        animateInside: true,
-                        message: response.data.detail
-                    }
-                );
-                await this.getAllActiveTasks();
-                this.loading = false;
-            }).catch(async (error) => {
-                if (error.response) {
-                    iziToast.error(
+                .then(async (response) => {
+                    iziToast.success(
                         {
-                            title: "Error Completing Action",
+                            title: "Action Successful",
                             balloon: true,
                             position: 'topRight',
                             animateInside: true,
-                            message: error.response.data.detail
+                            message: `Completed ${platform} ${endpoint} action successfully`
                         }
                     );
-                    if (error.response.data.error_message === 'Token is invalid or expired') {
-                        await this.refreshToken(this.connectInstagram);
+                    await this.getAllActiveTasks();
+                    this.loading = false;
+                }).catch(async (error) => {
+                    console.log(error)
+                    if (error.response.message) {
+                        iziToast.error(
+                            {
+                                title: "Error Completing Action",
+                                balloon: true,
+                                position: 'topRight',
+                                animateInside: true,
+                                message: error.response.message
+                            }
+                        );
+                        return;
                     }
-                } else {
-                    iziToast.error(
-                        {
-                            title: "Action Error",
-                            balloon: true,
-                            position: 'topLeft',
-                            animateInside: true,
-                            message: error
+                    else if (error.response.data.detail) {
+                        iziToast.error(
+                            {
+                                title: "Error Completing Action",
+                                balloon: true,
+                                position: 'topRight',
+                                animateInside: true,
+                                message: error.response.data.detail
+                            }
+                        );
+                        if (error.response.data.detail.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
+                            await this.refreshToken(this.connectInstagram);
+                        } else if (error.response.data.detail.includes('invalid')) {
+                            await this.refreshToken(this.connectInstagram);
                         }
-                    );
-                }
-                this.loading = false;
-            })
+                    } else if (error.response.data.error_message) {
+                        iziToast.error(
+                            {
+                                title: "Error Completing Action",
+                                balloon: true,
+                                position: 'topRight',
+                                animateInside: true,
+                                message: error.response.data.error_message
+                            }
+                        );
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.error_message.includes('is invalid') || error.response.data.error_message.includes('expired')) {
+                            await this.refreshToken(this.connectInstagram);
+                        } else if (error.response.data.error_message.includes('invalid')) {
+                            await this.refreshToken(this.connectInstagram);
+                        }
+                    } else {
+
+                        iziToast.error(
+                            {
+                                title: "Action Error",
+                                balloon: true,
+                                position: 'topLeft',
+                                animateInside: true,
+                                message: error
+                            }
+                        );
+                    }
+                    this.loading = false;
+                })
 
         },
 
@@ -282,7 +313,7 @@ export default function DataSet() {
                         message: error.response.data.error_message
                     });
 
-                    if (error.response.data.error_message === 'Token is invalid or expired') {
+                    if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                         await this.refreshToken(this.connectInstagram);
                     }
                 } else {
@@ -315,7 +346,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(this.connectInstagram);
                         }
                     } else {
@@ -349,7 +380,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(this.connectInstagram);
                         }
                     } else {
@@ -394,7 +425,7 @@ export default function DataSet() {
                             message: error.response.data.error_message
                         }
                     );
-                    if (error.response.data.error_message === 'Token is invalid or expired') {
+                    if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                         await this.refreshToken(null);
                     }
                 } else {
@@ -445,7 +476,7 @@ export default function DataSet() {
                             message: error.response.data.error_message
                         }
                     );
-                    if (error.response.data.error_message === 'Token is invalid or expired') {
+                    if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                         await this.refreshToken(null);
                     }
                 } else {
@@ -496,7 +527,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(this.connectInstagram);
                         }
                     } else {
@@ -538,7 +569,7 @@ export default function DataSet() {
                             message: error.response.data.error_message
                         }
                     );
-                    if (error.response.data.error_message === 'Token is invalid or expired') {
+                    if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                         await this.refreshToken(this.connectSpotify);
                     }
                 } else {
@@ -573,7 +604,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(this.connectSpotify);
                         }
                     } else {
@@ -617,7 +648,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(this.connectSpotify);
                         }
                     } else {
@@ -657,7 +688,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -694,7 +725,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -733,7 +764,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -781,7 +812,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -830,7 +861,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -877,7 +908,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -934,7 +965,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -983,7 +1014,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {
@@ -1031,7 +1062,7 @@ export default function DataSet() {
                                 message: error.response.data.error_message
                             }
                         );
-                        if (error.response.data.error_message === 'Token is invalid or expired') {
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
                             await this.refreshToken(null);
                         }
                     } else {

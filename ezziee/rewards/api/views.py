@@ -90,10 +90,12 @@ class RewardActionsViewset(UpdateModelMixin, BaseGenericViewSet):
     def instagram_like_post(self, request, id=None):
         try:
             action = self.get_object()
+            LOGGER.info(f"INSTAGRAM POST ID: {action.reward.ig_post_id}")
+            LOGGER.info(f"INSTAGRAM USERID: {request.user.instagram_id}")
 
             artist_post = action.reward.ig_post_id
 
-            if not artist_post == "" and request.user.instagram_id:
+            if artist_post is not "" and request.user.instagram_id is not (None or ""):
                 url = "https://instagram-manage-api.p.rapidapi.com/postLike"
 
                 payload = {"media_id": artist_post}
@@ -108,6 +110,7 @@ class RewardActionsViewset(UpdateModelMixin, BaseGenericViewSet):
 
                 res = response.json()
                 LOGGER.info(pprint(res))
+                LOGGER.info(res['message'])
 
                 if res['status'] == 'success':
                     complted_task = CompletedActions.objects.get_or_create(user=request.user, defaults={'task':action.reward, 'user':request.user, 'point':1})
@@ -121,6 +124,10 @@ class RewardActionsViewset(UpdateModelMixin, BaseGenericViewSet):
                 elif res['error'] == 'Invalid token':
                     return Response(
                         status=status.HTTP_400_BAD_REQUEST, data={"detail": _("Invalid API Token")}
+                    )
+                elif "You have exceeded the DAILY quota for Requests on your current" in res['message']:
+                    return Response(
+                        status=status.HTTP_400_BAD_REQUEST, data={'detail': res['message']}
                     )
             else:
                 return Response(

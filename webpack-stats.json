@@ -11,498 +11,61 @@
       "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/9d5328fb490cddd43f66.png",
       "publicPath": "/static/webpack_bundles/9d5328fb490cddd43f66.png"
     },
-    "css/project.23850c060f4aa17e34e8.css": {
-      "name": "css/project.23850c060f4aa17e34e8.css",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/project.23850c060f4aa17e34e8.css",
-      "publicPath": "/static/webpack_bundles/css/project.23850c060f4aa17e34e8.css"
-    },
-    "css/vendors.fbd62e413908c2d9ee0e.css": {
-      "name": "css/vendors.fbd62e413908c2d9ee0e.css",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/vendors.fbd62e413908c2d9ee0e.css",
-      "publicPath": "/static/webpack_bundles/css/vendors.fbd62e413908c2d9ee0e.css"
-    },
-    "js/project-0510b41d89069d8a51b5.js": {
-      "name": "js/project-0510b41d89069d8a51b5.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-0510b41d89069d8a51b5.js",
-      "publicPath": "/static/webpack_bundles/js/project-0510b41d89069d8a51b5.js"
-    },
-    "js/project-0a240b8b18e9b501b99d.js": {
-      "name": "js/project-0a240b8b18e9b501b99d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-0a240b8b18e9b501b99d.js",
-      "publicPath": "/static/webpack_bundles/js/project-0a240b8b18e9b501b99d.js"
-    },
-    "js/project-16af060dcf2f95930ee9.js": {
-      "name": "js/project-16af060dcf2f95930ee9.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-16af060dcf2f95930ee9.js",
-      "publicPath": "/static/webpack_bundles/js/project-16af060dcf2f95930ee9.js"
-    },
-    "js/project-17d7af1752c3ee98c931.js": {
-      "name": "js/project-17d7af1752c3ee98c931.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-17d7af1752c3ee98c931.js",
-      "publicPath": "/static/webpack_bundles/js/project-17d7af1752c3ee98c931.js"
-    },
-    "js/project-1b9fe173fe8c013686db.js": {
-      "name": "js/project-1b9fe173fe8c013686db.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-1b9fe173fe8c013686db.js",
-      "publicPath": "/static/webpack_bundles/js/project-1b9fe173fe8c013686db.js"
-    },
-    "js/project-2532f0445add62cf0c4b.js": {
-      "name": "js/project-2532f0445add62cf0c4b.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-2532f0445add62cf0c4b.js",
-      "publicPath": "/static/webpack_bundles/js/project-2532f0445add62cf0c4b.js"
-    },
-    "js/project-254cb5fabf71eeb8eddf.js": {
-      "name": "js/project-254cb5fabf71eeb8eddf.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-254cb5fabf71eeb8eddf.js",
-      "publicPath": "/static/webpack_bundles/js/project-254cb5fabf71eeb8eddf.js"
-    },
-    "js/project-2e3a178f1442d9f37d4d.js": {
-      "name": "js/project-2e3a178f1442d9f37d4d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-2e3a178f1442d9f37d4d.js",
-      "publicPath": "/static/webpack_bundles/js/project-2e3a178f1442d9f37d4d.js"
-    },
-    "js/project-354ae0d9e37df40ae05c.js": {
-      "name": "js/project-354ae0d9e37df40ae05c.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-354ae0d9e37df40ae05c.js",
-      "publicPath": "/static/webpack_bundles/js/project-354ae0d9e37df40ae05c.js"
-    },
-    "js/project-36c3ecc96758f4bc2cb1.js": {
-      "name": "js/project-36c3ecc96758f4bc2cb1.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-36c3ecc96758f4bc2cb1.js",
-      "publicPath": "/static/webpack_bundles/js/project-36c3ecc96758f4bc2cb1.js"
-    },
-    "js/project-45fac139ce967ccac468.js": {
-      "name": "js/project-45fac139ce967ccac468.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-45fac139ce967ccac468.js",
-      "publicPath": "/static/webpack_bundles/js/project-45fac139ce967ccac468.js"
-    },
-    "js/project-517143d55ce776a1cfe2.js": {
-      "name": "js/project-517143d55ce776a1cfe2.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-517143d55ce776a1cfe2.js",
-      "publicPath": "/static/webpack_bundles/js/project-517143d55ce776a1cfe2.js"
-    },
-    "js/project-5419e0a10e300c7b4b21.js": {
-      "name": "js/project-5419e0a10e300c7b4b21.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-5419e0a10e300c7b4b21.js",
-      "publicPath": "/static/webpack_bundles/js/project-5419e0a10e300c7b4b21.js"
-    },
-    "js/project-5f4682adbd700b56bd3d.js": {
-      "name": "js/project-5f4682adbd700b56bd3d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-5f4682adbd700b56bd3d.js",
-      "publicPath": "/static/webpack_bundles/js/project-5f4682adbd700b56bd3d.js"
-    },
-    "js/project-651572e3e5d1c14a0c9e.js": {
-      "name": "js/project-651572e3e5d1c14a0c9e.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-651572e3e5d1c14a0c9e.js",
-      "publicPath": "/static/webpack_bundles/js/project-651572e3e5d1c14a0c9e.js"
-    },
-    "js/project-654578ffbebf1ecf2af3.js": {
-      "name": "js/project-654578ffbebf1ecf2af3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-654578ffbebf1ecf2af3.js",
-      "publicPath": "/static/webpack_bundles/js/project-654578ffbebf1ecf2af3.js"
-    },
-    "js/project-68d0f49d8ed46ad854cc.js": {
-      "name": "js/project-68d0f49d8ed46ad854cc.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-68d0f49d8ed46ad854cc.js",
-      "publicPath": "/static/webpack_bundles/js/project-68d0f49d8ed46ad854cc.js"
-    },
-    "js/project-6a081f21132e77b9306d.js": {
-      "name": "js/project-6a081f21132e77b9306d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-6a081f21132e77b9306d.js",
-      "publicPath": "/static/webpack_bundles/js/project-6a081f21132e77b9306d.js"
-    },
-    "js/project-70e9fd8c8b99c274ffe7.js": {
-      "name": "js/project-70e9fd8c8b99c274ffe7.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-70e9fd8c8b99c274ffe7.js",
-      "publicPath": "/static/webpack_bundles/js/project-70e9fd8c8b99c274ffe7.js"
-    },
-    "js/project-7568339b0368df5a3978.js": {
-      "name": "js/project-7568339b0368df5a3978.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-7568339b0368df5a3978.js",
-      "publicPath": "/static/webpack_bundles/js/project-7568339b0368df5a3978.js"
-    },
-    "js/project-77d635b3950540d7deaf.js": {
-      "name": "js/project-77d635b3950540d7deaf.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-77d635b3950540d7deaf.js",
-      "publicPath": "/static/webpack_bundles/js/project-77d635b3950540d7deaf.js"
-    },
-    "js/project-7fac217fb78113ff2bf3.js": {
-      "name": "js/project-7fac217fb78113ff2bf3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-7fac217fb78113ff2bf3.js",
-      "publicPath": "/static/webpack_bundles/js/project-7fac217fb78113ff2bf3.js"
-    },
-    "js/project-8d14f23b6cd7e683d39f.js": {
-      "name": "js/project-8d14f23b6cd7e683d39f.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-8d14f23b6cd7e683d39f.js",
-      "publicPath": "/static/webpack_bundles/js/project-8d14f23b6cd7e683d39f.js"
-    },
-    "js/project-8d563a9ee12c5dfab3a7.js": {
-      "name": "js/project-8d563a9ee12c5dfab3a7.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-8d563a9ee12c5dfab3a7.js",
-      "publicPath": "/static/webpack_bundles/js/project-8d563a9ee12c5dfab3a7.js"
-    },
-    "js/project-8f29045818743d135513.js": {
-      "name": "js/project-8f29045818743d135513.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-8f29045818743d135513.js",
-      "publicPath": "/static/webpack_bundles/js/project-8f29045818743d135513.js"
-    },
-    "js/project-94aca853b03d83c6a94b.js": {
-      "name": "js/project-94aca853b03d83c6a94b.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-94aca853b03d83c6a94b.js",
-      "publicPath": "/static/webpack_bundles/js/project-94aca853b03d83c6a94b.js"
-    },
-    "js/project-9550020ccbe904c88642.js": {
-      "name": "js/project-9550020ccbe904c88642.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-9550020ccbe904c88642.js",
-      "publicPath": "/static/webpack_bundles/js/project-9550020ccbe904c88642.js"
-    },
-    "js/project-a56bbb4cef81f74eb022.js": {
-      "name": "js/project-a56bbb4cef81f74eb022.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-a56bbb4cef81f74eb022.js",
-      "publicPath": "/static/webpack_bundles/js/project-a56bbb4cef81f74eb022.js"
-    },
-    "js/project-a77b55848685fcc421d2.js": {
-      "name": "js/project-a77b55848685fcc421d2.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-a77b55848685fcc421d2.js",
-      "publicPath": "/static/webpack_bundles/js/project-a77b55848685fcc421d2.js"
-    },
-    "js/project-a9082b34928df0cb9de6.js": {
-      "name": "js/project-a9082b34928df0cb9de6.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-a9082b34928df0cb9de6.js",
-      "publicPath": "/static/webpack_bundles/js/project-a9082b34928df0cb9de6.js"
-    },
-    "js/project-acefd8646072747a0c25.js": {
-      "name": "js/project-acefd8646072747a0c25.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-acefd8646072747a0c25.js",
-      "publicPath": "/static/webpack_bundles/js/project-acefd8646072747a0c25.js"
-    },
-    "js/project-b251c28f967e162078bc.js": {
-      "name": "js/project-b251c28f967e162078bc.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-b251c28f967e162078bc.js",
-      "publicPath": "/static/webpack_bundles/js/project-b251c28f967e162078bc.js"
-    },
-    "js/project-b8240f6f44fb8c8ec37b.js": {
-      "name": "js/project-b8240f6f44fb8c8ec37b.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-b8240f6f44fb8c8ec37b.js",
-      "publicPath": "/static/webpack_bundles/js/project-b8240f6f44fb8c8ec37b.js"
-    },
-    "js/project-c40b1529b5b7e0ef57eb.js": {
-      "name": "js/project-c40b1529b5b7e0ef57eb.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-c40b1529b5b7e0ef57eb.js",
-      "publicPath": "/static/webpack_bundles/js/project-c40b1529b5b7e0ef57eb.js"
-    },
-    "js/project-cab6c91aa91e5e535474.js": {
-      "name": "js/project-cab6c91aa91e5e535474.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-cab6c91aa91e5e535474.js",
-      "publicPath": "/static/webpack_bundles/js/project-cab6c91aa91e5e535474.js"
-    },
-    "js/project-cbcb480dc9deae2c8468.js": {
-      "name": "js/project-cbcb480dc9deae2c8468.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-cbcb480dc9deae2c8468.js",
-      "publicPath": "/static/webpack_bundles/js/project-cbcb480dc9deae2c8468.js"
-    },
-    "js/project-d7b08de1cd126040b564.js": {
-      "name": "js/project-d7b08de1cd126040b564.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-d7b08de1cd126040b564.js",
-      "publicPath": "/static/webpack_bundles/js/project-d7b08de1cd126040b564.js"
-    },
-    "js/project-d8ba3b3c41025aa62406.js": {
-      "name": "js/project-d8ba3b3c41025aa62406.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-d8ba3b3c41025aa62406.js",
-      "publicPath": "/static/webpack_bundles/js/project-d8ba3b3c41025aa62406.js"
-    },
-    "js/project-dbb693e33f29ca4c4d9c.js": {
-      "name": "js/project-dbb693e33f29ca4c4d9c.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-dbb693e33f29ca4c4d9c.js",
-      "publicPath": "/static/webpack_bundles/js/project-dbb693e33f29ca4c4d9c.js"
-    },
-    "js/project-dc949a2450e4194145e8.js": {
-      "name": "js/project-dc949a2450e4194145e8.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-dc949a2450e4194145e8.js",
-      "publicPath": "/static/webpack_bundles/js/project-dc949a2450e4194145e8.js"
-    },
-    "js/project-df82e4d6630528a73a55.js": {
-      "name": "js/project-df82e4d6630528a73a55.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-df82e4d6630528a73a55.js",
-      "publicPath": "/static/webpack_bundles/js/project-df82e4d6630528a73a55.js"
-    },
-    "js/project-dfd358939029fe71b5ae.js": {
-      "name": "js/project-dfd358939029fe71b5ae.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-dfd358939029fe71b5ae.js",
-      "publicPath": "/static/webpack_bundles/js/project-dfd358939029fe71b5ae.js"
-    },
-    "js/project-e13c0cf7201e0a6e0cc3.js": {
-      "name": "js/project-e13c0cf7201e0a6e0cc3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-e13c0cf7201e0a6e0cc3.js",
-      "publicPath": "/static/webpack_bundles/js/project-e13c0cf7201e0a6e0cc3.js"
-    },
-    "js/project-e5c31dd35c0899c7c6f3.js": {
-      "name": "js/project-e5c31dd35c0899c7c6f3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-e5c31dd35c0899c7c6f3.js",
-      "publicPath": "/static/webpack_bundles/js/project-e5c31dd35c0899c7c6f3.js"
-    },
-    "js/project-eac75ffc804bd95812ff.js": {
-      "name": "js/project-eac75ffc804bd95812ff.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-eac75ffc804bd95812ff.js",
-      "publicPath": "/static/webpack_bundles/js/project-eac75ffc804bd95812ff.js"
-    },
-    "js/project-f11707d31e67c8418c7d.js": {
-      "name": "js/project-f11707d31e67c8418c7d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-f11707d31e67c8418c7d.js",
-      "publicPath": "/static/webpack_bundles/js/project-f11707d31e67c8418c7d.js"
-    },
-    "js/project-f908c634ef60e6511278.js": {
-      "name": "js/project-f908c634ef60e6511278.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-f908c634ef60e6511278.js",
-      "publicPath": "/static/webpack_bundles/js/project-f908c634ef60e6511278.js"
-    },
-    "js/vendors-0510b41d89069d8a51b5.js": {
-      "name": "js/vendors-0510b41d89069d8a51b5.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-0510b41d89069d8a51b5.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-0510b41d89069d8a51b5.js"
-    },
-    "js/vendors-0a240b8b18e9b501b99d.js": {
-      "name": "js/vendors-0a240b8b18e9b501b99d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-0a240b8b18e9b501b99d.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-0a240b8b18e9b501b99d.js"
-    },
-    "js/vendors-16af060dcf2f95930ee9.js": {
-      "name": "js/vendors-16af060dcf2f95930ee9.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-16af060dcf2f95930ee9.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-16af060dcf2f95930ee9.js"
-    },
-    "js/vendors-17d7af1752c3ee98c931.js": {
-      "name": "js/vendors-17d7af1752c3ee98c931.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-17d7af1752c3ee98c931.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-17d7af1752c3ee98c931.js"
-    },
-    "js/vendors-1b9fe173fe8c013686db.js": {
-      "name": "js/vendors-1b9fe173fe8c013686db.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-1b9fe173fe8c013686db.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-1b9fe173fe8c013686db.js"
-    },
-    "js/vendors-2532f0445add62cf0c4b.js": {
-      "name": "js/vendors-2532f0445add62cf0c4b.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-2532f0445add62cf0c4b.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-2532f0445add62cf0c4b.js"
-    },
-    "js/vendors-254cb5fabf71eeb8eddf.js": {
-      "name": "js/vendors-254cb5fabf71eeb8eddf.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-254cb5fabf71eeb8eddf.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-254cb5fabf71eeb8eddf.js"
-    },
-    "js/vendors-2e3a178f1442d9f37d4d.js": {
-      "name": "js/vendors-2e3a178f1442d9f37d4d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-2e3a178f1442d9f37d4d.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-2e3a178f1442d9f37d4d.js"
-    },
-    "js/vendors-354ae0d9e37df40ae05c.js": {
-      "name": "js/vendors-354ae0d9e37df40ae05c.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-354ae0d9e37df40ae05c.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-354ae0d9e37df40ae05c.js"
-    },
-    "js/vendors-36c3ecc96758f4bc2cb1.js": {
-      "name": "js/vendors-36c3ecc96758f4bc2cb1.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-36c3ecc96758f4bc2cb1.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-36c3ecc96758f4bc2cb1.js"
-    },
-    "js/vendors-45fac139ce967ccac468.js": {
-      "name": "js/vendors-45fac139ce967ccac468.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-45fac139ce967ccac468.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-45fac139ce967ccac468.js"
-    },
-    "js/vendors-517143d55ce776a1cfe2.js": {
-      "name": "js/vendors-517143d55ce776a1cfe2.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-517143d55ce776a1cfe2.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-517143d55ce776a1cfe2.js"
-    },
-    "js/vendors-5419e0a10e300c7b4b21.js": {
-      "name": "js/vendors-5419e0a10e300c7b4b21.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-5419e0a10e300c7b4b21.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-5419e0a10e300c7b4b21.js"
-    },
-    "js/vendors-5f4682adbd700b56bd3d.js": {
-      "name": "js/vendors-5f4682adbd700b56bd3d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-5f4682adbd700b56bd3d.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-5f4682adbd700b56bd3d.js"
-    },
-    "js/vendors-651572e3e5d1c14a0c9e.js": {
-      "name": "js/vendors-651572e3e5d1c14a0c9e.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-651572e3e5d1c14a0c9e.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-651572e3e5d1c14a0c9e.js"
-    },
-    "js/vendors-654578ffbebf1ecf2af3.js": {
-      "name": "js/vendors-654578ffbebf1ecf2af3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-654578ffbebf1ecf2af3.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-654578ffbebf1ecf2af3.js"
-    },
-    "js/vendors-68d0f49d8ed46ad854cc.js": {
-      "name": "js/vendors-68d0f49d8ed46ad854cc.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-68d0f49d8ed46ad854cc.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-68d0f49d8ed46ad854cc.js"
-    },
-    "js/vendors-6a081f21132e77b9306d.js": {
-      "name": "js/vendors-6a081f21132e77b9306d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-6a081f21132e77b9306d.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-6a081f21132e77b9306d.js"
-    },
-    "js/vendors-70e9fd8c8b99c274ffe7.js": {
-      "name": "js/vendors-70e9fd8c8b99c274ffe7.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-70e9fd8c8b99c274ffe7.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-70e9fd8c8b99c274ffe7.js"
-    },
-    "js/vendors-7568339b0368df5a3978.js": {
-      "name": "js/vendors-7568339b0368df5a3978.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-7568339b0368df5a3978.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-7568339b0368df5a3978.js"
-    },
-    "js/vendors-77d635b3950540d7deaf.js": {
-      "name": "js/vendors-77d635b3950540d7deaf.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-77d635b3950540d7deaf.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-77d635b3950540d7deaf.js"
-    },
-    "js/vendors-7fac217fb78113ff2bf3.js": {
-      "name": "js/vendors-7fac217fb78113ff2bf3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-7fac217fb78113ff2bf3.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-7fac217fb78113ff2bf3.js"
-    },
-    "js/vendors-8d14f23b6cd7e683d39f.js": {
-      "name": "js/vendors-8d14f23b6cd7e683d39f.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-8d14f23b6cd7e683d39f.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-8d14f23b6cd7e683d39f.js"
-    },
-    "js/vendors-8d563a9ee12c5dfab3a7.js": {
-      "name": "js/vendors-8d563a9ee12c5dfab3a7.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-8d563a9ee12c5dfab3a7.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-8d563a9ee12c5dfab3a7.js"
-    },
-    "js/vendors-8f29045818743d135513.js": {
-      "name": "js/vendors-8f29045818743d135513.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-8f29045818743d135513.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-8f29045818743d135513.js"
-    },
-    "js/vendors-94aca853b03d83c6a94b.js": {
-      "name": "js/vendors-94aca853b03d83c6a94b.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-94aca853b03d83c6a94b.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-94aca853b03d83c6a94b.js"
-    },
-    "js/vendors-9550020ccbe904c88642.js": {
-      "name": "js/vendors-9550020ccbe904c88642.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-9550020ccbe904c88642.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-9550020ccbe904c88642.js"
-    },
-    "js/vendors-a56bbb4cef81f74eb022.js": {
-      "name": "js/vendors-a56bbb4cef81f74eb022.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-a56bbb4cef81f74eb022.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-a56bbb4cef81f74eb022.js"
-    },
-    "js/vendors-a77b55848685fcc421d2.js": {
-      "name": "js/vendors-a77b55848685fcc421d2.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-a77b55848685fcc421d2.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-a77b55848685fcc421d2.js"
-    },
-    "js/vendors-a9082b34928df0cb9de6.js": {
-      "name": "js/vendors-a9082b34928df0cb9de6.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-a9082b34928df0cb9de6.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-a9082b34928df0cb9de6.js"
-    },
-    "js/vendors-acefd8646072747a0c25.js": {
-      "name": "js/vendors-acefd8646072747a0c25.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-acefd8646072747a0c25.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-acefd8646072747a0c25.js"
-    },
-    "js/vendors-b251c28f967e162078bc.js": {
-      "name": "js/vendors-b251c28f967e162078bc.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-b251c28f967e162078bc.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-b251c28f967e162078bc.js"
-    },
-    "js/vendors-b8240f6f44fb8c8ec37b.js": {
-      "name": "js/vendors-b8240f6f44fb8c8ec37b.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-b8240f6f44fb8c8ec37b.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-b8240f6f44fb8c8ec37b.js"
-    },
-    "js/vendors-c40b1529b5b7e0ef57eb.js": {
-      "name": "js/vendors-c40b1529b5b7e0ef57eb.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-c40b1529b5b7e0ef57eb.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-c40b1529b5b7e0ef57eb.js"
-    },
-    "js/vendors-cab6c91aa91e5e535474.js": {
-      "name": "js/vendors-cab6c91aa91e5e535474.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-cab6c91aa91e5e535474.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-cab6c91aa91e5e535474.js"
-    },
-    "js/vendors-cbcb480dc9deae2c8468.js": {
-      "name": "js/vendors-cbcb480dc9deae2c8468.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-cbcb480dc9deae2c8468.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-cbcb480dc9deae2c8468.js"
-    },
-    "js/vendors-d7b08de1cd126040b564.js": {
-      "name": "js/vendors-d7b08de1cd126040b564.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-d7b08de1cd126040b564.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-d7b08de1cd126040b564.js"
-    },
-    "js/vendors-d8ba3b3c41025aa62406.js": {
-      "name": "js/vendors-d8ba3b3c41025aa62406.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-d8ba3b3c41025aa62406.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-d8ba3b3c41025aa62406.js"
-    },
-    "js/vendors-dbb693e33f29ca4c4d9c.js": {
-      "name": "js/vendors-dbb693e33f29ca4c4d9c.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-dbb693e33f29ca4c4d9c.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-dbb693e33f29ca4c4d9c.js"
-    },
-    "js/vendors-dc949a2450e4194145e8.js": {
-      "name": "js/vendors-dc949a2450e4194145e8.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-dc949a2450e4194145e8.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-dc949a2450e4194145e8.js"
-    },
-    "js/vendors-df82e4d6630528a73a55.js": {
-      "name": "js/vendors-df82e4d6630528a73a55.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-df82e4d6630528a73a55.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-df82e4d6630528a73a55.js"
-    },
-    "js/vendors-dfd358939029fe71b5ae.js": {
-      "name": "js/vendors-dfd358939029fe71b5ae.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-dfd358939029fe71b5ae.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-dfd358939029fe71b5ae.js"
-    },
-    "js/vendors-e13c0cf7201e0a6e0cc3.js": {
-      "name": "js/vendors-e13c0cf7201e0a6e0cc3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-e13c0cf7201e0a6e0cc3.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-e13c0cf7201e0a6e0cc3.js"
-    },
-    "js/vendors-e5c31dd35c0899c7c6f3.js": {
-      "name": "js/vendors-e5c31dd35c0899c7c6f3.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-e5c31dd35c0899c7c6f3.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-e5c31dd35c0899c7c6f3.js"
-    },
-    "js/vendors-eac75ffc804bd95812ff.js": {
-      "name": "js/vendors-eac75ffc804bd95812ff.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-eac75ffc804bd95812ff.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-eac75ffc804bd95812ff.js"
-    },
-    "js/vendors-f11707d31e67c8418c7d.js": {
-      "name": "js/vendors-f11707d31e67c8418c7d.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-f11707d31e67c8418c7d.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-f11707d31e67c8418c7d.js"
-    },
-    "js/vendors-f908c634ef60e6511278.js": {
-      "name": "js/vendors-f908c634ef60e6511278.js",
-      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-f908c634ef60e6511278.js",
-      "publicPath": "/static/webpack_bundles/js/vendors-f908c634ef60e6511278.js"
+    "css/project.24b4c04293c822970844.css": {
+      "name": "css/project.24b4c04293c822970844.css",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/project.24b4c04293c822970844.css",
+      "publicPath": "/static/webpack_bundles/css/project.24b4c04293c822970844.css"
+    },
+    "css/project.24b4c04293c822970844.css.map": {
+      "name": "css/project.24b4c04293c822970844.css.map",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/project.24b4c04293c822970844.css.map",
+      "publicPath": "/static/webpack_bundles/css/project.24b4c04293c822970844.css.map"
+    },
+    "css/vendors.9ae8961cb1f2b617a87b.css": {
+      "name": "css/vendors.9ae8961cb1f2b617a87b.css",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css",
+      "publicPath": "/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css"
+    },
+    "css/vendors.9ae8961cb1f2b617a87b.css.map": {
+      "name": "css/vendors.9ae8961cb1f2b617a87b.css.map",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css.map",
+      "publicPath": "/static/webpack_bundles/css/vendors.9ae8961cb1f2b617a87b.css.map"
+    },
+    "js/project-174dae520c0b340576e1.js": {
+      "name": "js/project-174dae520c0b340576e1.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-174dae520c0b340576e1.js",
+      "publicPath": "/static/webpack_bundles/js/project-174dae520c0b340576e1.js"
+    },
+    "js/project-174dae520c0b340576e1.js.map": {
+      "name": "js/project-174dae520c0b340576e1.js.map",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/project-174dae520c0b340576e1.js.map",
+      "publicPath": "/static/webpack_bundles/js/project-174dae520c0b340576e1.js.map"
+    },
+    "js/vendors-174dae520c0b340576e1.js": {
+      "name": "js/vendors-174dae520c0b340576e1.js",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js",
+      "publicPath": "/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js"
+    },
+    "js/vendors-174dae520c0b340576e1.js.LICENSE.txt": {
+      "name": "js/vendors-174dae520c0b340576e1.js.LICENSE.txt",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.LICENSE.txt",
+      "publicPath": "/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.LICENSE.txt"
+    },
+    "js/vendors-174dae520c0b340576e1.js.map": {
+      "name": "js/vendors-174dae520c0b340576e1.js.map",
+      "path": "/home/darkcodr/www/darkcodr/ezziee/ezziee/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.map",
+      "publicPath": "/static/webpack_bundles/js/vendors-174dae520c0b340576e1.js.map"
     }
   },
   "chunks": {
     "project": [
-      "css/project.23850c060f4aa17e34e8.css",
-      "js/project-cbcb480dc9deae2c8468.js"
+      "js/project-174dae520c0b340576e1.js",
+      "css/project.24b4c04293c822970844.css"
     ],
     "vendors": [
-      "css/vendors.fbd62e413908c2d9ee0e.css",
-      "js/vendors-cbcb480dc9deae2c8468.js"
+      "js/vendors-174dae520c0b340576e1.js",
+      "css/vendors.9ae8961cb1f2b617a87b.css"
     ]
   },
-  "publicPath": "/static/webpack_bundles/",
-  "error": "ModuleBuildError",
-  "message": "Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/darkcodr/www/darkcodr/ezziee/ezziee/static/js/components/DataSet.js: Unexpected token (224:20)\n\n  222 |                 }).catch(async (error) => {\n  223 |                     console.log(error)\n> 224 |                     else if (error.response.data.detail) {\n      |                     ^\n  225 |                         iziToast.error(\n  226 |                             {\n  227 |                                 title: \"Error Completing Action\",\n    at constructor (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:356:19)\n    at Parser.raise (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:3223:19)\n    at Parser.unexpected (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:3253:16)\n    at Parser.parseExprAtom (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11257:16)\n    at Parser.parseExprSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10857:23)\n    at Parser.parseUpdate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10840:21)\n    at Parser.parseMaybeUnary (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10816:23)\n    at Parser.parseMaybeUnaryOrPrivate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10654:61)\n    at Parser.parseExprOps (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeConditional (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10636:23)\n    at Parser.parseMaybeAssign (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10597:21)\n    at Parser.parseExpressionBase (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10551:23)\n    at /home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10547:39\n    at Parser.allowInAnd (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12279:16)\n    at Parser.parseExpression (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10547:17)\n    at Parser.parseStatementContent (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12737:23)\n    at Parser.parseStatementLike (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12588:17)\n    at Parser.parseStatementListItem (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12568:17)\n    at Parser.parseBlockOrModuleBlockBody (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:13189:61)\n    at Parser.parseBlockBody (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:13182:10)\n    at Parser.parseBlock (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:13170:10)\n    at Parser.parseFunctionBody (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11935:24)\n    at Parser.parseArrowExpression (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11910:10)\n    at Parser.parseAsyncArrowFromCallExpression (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11066:10)\n    at Parser.parseCoverCallAndAsyncArrowHead (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10972:27)\n    at Parser.parseSubscript (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10899:19)\n    at Parser.parseSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10870:19)\n    at Parser.parseExprSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10861:17)\n    at Parser.parseUpdate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10840:21)\n    at Parser.parseMaybeUnary (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10816:23)\n    at Parser.parseMaybeUnaryOrPrivate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10654:61)\n    at Parser.parseExprOps (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeConditional (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10636:23)\n    at Parser.parseMaybeAssign (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10597:21)\n    at /home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10567:39\n    at Parser.allowInAnd (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12284:12)\n    at Parser.parseMaybeAssignAllowIn (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10567:17)\n    at Parser.parseExprListItem (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12020:18)\n    at Parser.parseCallExpressionArguments (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:11054:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10964:29)\n    at Parser.parseSubscript (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10899:19)\n    at Parser.parseSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10870:19)\n    at Parser.parseExprSubscripts (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10861:17)\n    at Parser.parseUpdate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10840:21)\n    at Parser.parseMaybeUnary (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10816:23)\n    at Parser.parseAwait (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:12134:28)\n    at Parser.parseMaybeUnary (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10781:25)\n    at Parser.parseMaybeUnaryOrPrivate (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10654:61)\n    at Parser.parseExprOps (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10659:23)\n    at Parser.parseMaybeConditional (/home/darkcodr/www/darkcodr/ezziee/node_modules/@babel/parser/lib/index.js:10636:23)"
+  "publicPath": "/static/webpack_bundles/"
 }

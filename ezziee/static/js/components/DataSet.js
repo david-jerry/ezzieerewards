@@ -234,6 +234,7 @@ export default function DataSet() {
                         return;
                     }
                     else if (error.response.data.detail) {
+                        console.log(error.response.data)
                         iziToast.error(
                             {
                                 title: "Error Completing Action",

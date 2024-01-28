@@ -17,7 +17,7 @@ from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 # from model_utils.models import TimeStampedModel
-# from encrypted_fields.fields import EncryptedCharField
+from encrypted_fields.fields import EncryptedCharField
 
 # from ..utils.validators import image_validate_file_extension
 # from ..utils.files import file_upload_path

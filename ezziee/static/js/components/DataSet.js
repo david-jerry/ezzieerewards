@@ -898,6 +898,15 @@ export default function DataSet() {
                     if (response.status === 200) {
                         this.user = response.data.user
                     }
+                    iziToast.success(
+                        {
+                            title: response.data.detail,
+                            balloon: true,
+                            position: 'topRight',
+                            animateInside: true,
+                            message: "Welcome to ezzieerewards. We are delighted to have you with us"
+                        }
+                    );
                 }).catch(async (error) => {
                     if (error.response) {
                         iziToast.error(

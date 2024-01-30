@@ -6,6 +6,16 @@ function sleep(ms) {
     return new window.Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function clearAllCookies() {
+    var cookies = document.cookie.split("; ");
+
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+    }
+}
 export default function DataSet() {
     return {
         active: 1,
@@ -96,6 +106,7 @@ export default function DataSet() {
         async initUser(user) {
             if (user !== 'None') {
                 await this.getProfile()
+                await this.init();
             }
         },
 
@@ -886,6 +897,7 @@ export default function DataSet() {
         },
 
         async register() {
+            clearAllCookies();
             this.processing = true
             sessionStorage.setItem('verifyEmail', JSON.stringify(this.registerForm.email));
 
@@ -943,6 +955,7 @@ export default function DataSet() {
         },
 
         async login() {
+            clearAllCookies();
             this.processing = true
             console.log(this.loginForm);
 
@@ -1051,6 +1064,7 @@ export default function DataSet() {
         async logOut() {
             this.loading = true;
             sessionStorage.clear();
+            clearAllCookies();
             await axios.get('/api/v1/auth/logout/')
                 .then(async (response) => {
                     if (response.status === 200) {

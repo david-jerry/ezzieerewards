@@ -912,6 +912,7 @@ export default function DataSet() {
             }
             await axios.post("/api/v1/auth/registration/", data)
                 .then(async (response) => {
+                    console.log(response);
                     if (response.status === 201) {
                         iziToast.success(
                             {
@@ -925,6 +926,7 @@ export default function DataSet() {
                         this.user = response.data.userData.user
                         sessionStorage.setItem('userData', JSON.stringify(this.user));
                     }
+                    location.reload();
                 }).catch(async (error) => {
                     if (error.response) {
                         iziToast.error(

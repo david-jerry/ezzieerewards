@@ -46,6 +46,8 @@ export default function DataSet() {
             email: null
         },
 
+        fb_email: null,
+
         loginForm: {
             username: null,
             // email: null,
@@ -895,18 +897,19 @@ export default function DataSet() {
             }
             await axios.post("/api/v1/auth/registration/", data)
                 .then(async (response) => {
-                    if (response.status === 200) {
-                        this.user = response.data.user
+                    if (response.status === 201) {
+                        iziToast.success(
+                            {
+                                title: response.data.detail,
+                                balloon: true,
+                                position: 'topRight',
+                                animateInside: true,
+                                message: "Welcome to ezzieerewards. We are delighted to have you with us"
+                            }
+                        );
+                        this.user = response.data.userData.user
+                        sessionStorage.setItem('userData', JSON.stringify(this.user));
                     }
-                    iziToast.success(
-                        {
-                            title: response.data.detail,
-                            balloon: true,
-                            position: 'topRight',
-                            animateInside: true,
-                            message: "Welcome to ezzieerewards. We are delighted to have you with us"
-                        }
-                    );
                 }).catch(async (error) => {
                     if (error.response) {
                         iziToast.error(

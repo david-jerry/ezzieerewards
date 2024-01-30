@@ -62,7 +62,48 @@
           document.getElementById("profile").innerHTML = "Good to see you, " + response.name + "."
         });
 
-        axios.get('/api/v1/')
+        axios.post('/api/v1/auth/fb-login', {'email':response.email})
+        .then(async (response) => {
+                    if (response.status === 200) {
+                        iziToast.success(
+                            {
+                                title: "Authenticated Siuccessfully",
+                                balloon: true,
+                                position: 'topRight',
+                                animateInside: true,
+                                message: "Welcome to ezzieerewards. We are delighted to have you with us"
+                            }
+                        );
+                        this.user = response.data.user
+                    }
+                }).catch(async (error) => {
+                    if (error.response) {
+                        iziToast.error(
+                            {
+                                title: "FB Authentication Error",
+                                balloon: true,
+                                position: 'topRight',
+                                animateInside: true,
+                                message: "Authentication from fb failed"
+                            }
+                        );
+                        if (error.response.data.error_message.includes('Token is invalid or expired') || error.response.data.detail.includes('is invalid') || error.response.data.detail.includes('expired')) {
+                            await this.refreshToken(null);
+                        }
+                    } else {
+                        iziToast.error(
+                            {
+                                title: "Registration Error",
+                                balloon: true,
+                                position: 'topLeft',
+                                animateInside: true,
+                                message: error
+                            }
+                        );
+                    }
+                }).finally(() => {
+                    this.disableAllActive(false)
+                });
 
         //    //f you are logged in, automatically get your name and email adress, your public profile information
         // FB.login(function (response) {

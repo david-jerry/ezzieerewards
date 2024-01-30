@@ -1115,6 +1115,28 @@ class UserViewSet(RetrieveModelMixin, ListModelMixin, UpdateModelMixin, GenericV
         except:
             raise UnAuthenticatedUserOrExistsException
 
+    @action(detail=False, url_path="fb-login")
+    def fb_login(self, request):
+        from django.contrib.auth import authenticate, login
+
+        try:
+            email = request.data.get('email')
+            user = User.objects.filter(email=email).first()
+
+            if user is not None:
+                u = authenticate(request, username=user.username, password=None)
+                if u is not None:
+                    login(request, u, backend=['django.contrib.auth.backends.ModelBackend'])
+                else:
+                    return Response(status=status.HTTP_400_BAD_REQUEST, data={"detail": _("User does not exists")})
+                raise UnAuthenticatedUserOrExistsException
+            serializer = UserSerializer(u, context={"request": request})
+            return Response(
+                status=status.HTTP_200_OK, data={"detail": _("Authenticated"), "userData": serializer.data}
+            )
+        except:
+            raise UnAuthenticatedUserOrExistsException
+
     @action(detail=False, methods=["get"], url_path="get-qualified-users")
     def qualified_subscriberslist(self, request):
         # Filter active reward requests directly

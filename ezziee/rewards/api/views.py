@@ -95,7 +95,7 @@ class RewardActionsViewset(UpdateModelMixin, BaseGenericViewSet):
 
             artist_post = action.reward.ig_post_id
 
-            if artist_post is not "" and request.user.instagram_id is not (None or ""):
+            if artist_post != "" and request.user.instagram_id is not None:
                 url = "https://instagram-manage-api.p.rapidapi.com/postLike"
 
                 payload = {"media_id": artist_post}

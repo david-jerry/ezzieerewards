@@ -916,7 +916,7 @@ export default function DataSet() {
                     if (response.status === 201) {
                         iziToast.success(
                             {
-                                title: response.data.detail,
+                                title: "Registration Successful",
                                 balloon: true,
                                 position: 'topRight',
                                 animateInside: true,

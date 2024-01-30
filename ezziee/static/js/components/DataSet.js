@@ -1,3 +1,4 @@
+import { Logger } from "sass";
 import axios from "./AxiosFactory";
 import iziToast from 'izitoast/dist/js/iziToast.min.js';  // you have access to iziToast now
 
@@ -335,6 +336,7 @@ export default function DataSet() {
         async getProfile() {
             await axios.get("/api/v1/users/me")
                 .then(async (response) => {
+                    console.log(response.data)
                     this.user = response.data.userData;
                     sessionStorage.setItem('userData', JSON.stringify(this.user));
                     await this.getBank();

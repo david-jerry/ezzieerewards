@@ -432,6 +432,7 @@ export default function DataSet() {
                 }
             }).catch(async (error) => {
                 if (error.response) {
+                    console.log(error.response.data)
                     iziToast.error(
                         {
                             title: error.response.data.error_code,

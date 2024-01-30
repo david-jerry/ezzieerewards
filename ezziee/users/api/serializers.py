@@ -467,6 +467,8 @@ class UserSerializer(serializers.ModelSerializer[UserType]):
             "url",
         ]
         read_only_fields = [
+            "username",
+            "email",
             "facebook_token",
             "facebook_id",
             "instagram_id",
